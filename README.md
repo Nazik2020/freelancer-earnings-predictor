@@ -20,7 +20,7 @@
 
 | Dashboard | Insights |
 |----------|----------|
-| ![Dashboard]([/photo_2026-04-07_15-06-11.jpg)]) | ![Insights](screenshots/insights.png) |
+| ![Dashboard]([client/photo_2026-04-07_15-06-21.jpg)]) | ![Insights](screenshots/insights.png) |
 
 ---
 
