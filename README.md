@@ -18,8 +18,8 @@
 
 ## 📸 Screenshots
 
-| Dashboard | Model Insights |
-|----------|---------------|
+| Dashboard | Insights |
+|----------|----------|
 | ![Dashboard](screenshots/dashboard.png) | ![Insights](screenshots/insights.png) |
 
 ---
@@ -29,8 +29,8 @@
 Users input their freelance profile and get:
 
 - 💰 **Predicted Monthly Earnings (USD)**
-- 📊 **Feature Impact Analysis**
-- 📈 **Market Position (percentile ranking)**
+- 📊 **Feature Importance Analysis**
+- 📈 **Market Position (Percentile Ranking)**
 - 🧠 **Strategic Career Insights**
 
 ---
@@ -38,29 +38,30 @@ Users input their freelance profile and get:
 ## 🧠 Machine Learning Pipeline
 
 ### 📊 Dataset
-- **5,000 synthetic records** based on real freelancer market trends  
-- **15 features** including Job Category, Experience Level, Hourly Rate, Jobs Completed  
-- Injected missing values for realistic EDA practice  
+- **5,000 synthetic records** based on freelancer market trends  
+- **15 features** (Job Category, Experience Level, Hourly Rate, Jobs Completed, etc.)  
+- Includes missing values for realistic EDA practice  
 
 ---
 
 ### 🔍 Exploratory Data Analysis
 
 - Missing values handled using **5% / 30% rule**
-- Identified **right-skewed earnings distribution**
+- Identified **right-skewed distribution**
 - Outlier detection using **IQR method**
-- Correlation heatmap to identify key predictors
+- Correlation heatmap for feature relationships  
 
 ---
 
 ### ⚙️ Preprocessing
 
-- Categorical → `category` dtype conversion  
+- Converted categorical features → `category` dtype  
 - **Ordinal Encoding** for `Experience_Level`  
 - **Label Encoding** for `Job_Category`, `Platform`  
-- Feature engineering:
-  - Created `Project_Complexity` using `pd.cut()`
-- Dropped low-impact features based on correlation
+
+#### 🔧 Feature Engineering
+- Created `Project_Complexity` using `pd.cut()`  
+- Dropped low-impact features based on correlation  
 
 ---
 
@@ -76,3 +77,139 @@ Users input their freelance profile and get:
 ---
 
 ## 🏆 Final Model
+
+- **Model:** RandomForestRegressor  
+- **R² Score:** 0.7183  
+- **Criterion:** squared_error  
+- **Max Depth:** 5  
+
+---
+
+## 📊 Feature Importance
+
+| Feature | Importance |
+|--------|-----------|
+| Experience Level | ~57% |
+| Hourly Rate | ~22% |
+| Job Category | ~18% |
+| Jobs Completed | ~2% |
+| Project Complexity | ~0.2% |
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Technology |
+|------|-----------|
+| ML | Python, Scikit-learn |
+| Backend | Flask, Flask-CORS |
+| Frontend | HTML, CSS, JavaScript |
+| Styling | Tailwind CSS |
+| Data | Pandas, NumPy |
+| Deployment | Microsoft Azure |
+| Model Storage | Pickle |
+
+---
+
+## 📡 API Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | GET | Server status |
+| `/predict_salary` | POST | Predict earnings |
+| `/get_model_insights` | GET | Visualization data |
+| `/get_user_position` | GET | Percentile ranking |
+
+---
+
+## 🔮 Prediction Example
+
+### 📥 Request
+```json
+{
+  "job_category": "App Development",
+  "experience_level": "Expert",
+  "job_completed": 150,
+  "hourly_rate": 75,
+  "project_complexity": 3
+}
+
+```
+### 📤 Response
+```json
+{
+  "estimated_salary": 8024.63,
+  "feature_importance": {
+    "Experience_Level": 57.2,
+    "Hourly_Rate": 21.8,
+    "Job_Category": 18.7,
+    "Job_Completed": 2.1,
+    "Project_Complexity": 0.2
+  }
+}
+```
+
+### 📊 Dashboard Features
+-  **Dashboard Page**
+- User input form
+- Earnings prediction output
+- Model confidence (R² score)
+- Feature importance visualization
+
+
+- **📈 Insights Page**
+- Earnings distribution histogram
+- Experience vs earnings analysis
+- Role-based comparisons
+- Strategic insights
+
+
+### 📁 Project Structure
+
+``` freelancer-earnings-predictor/
+│
+├── notebook/
+│   └── freelance_salary_estimator.ipynb
+│
+├── server/
+│   ├── server.py
+│   ├── util.py
+│   └── artifacts/
+│       ├── model.pickle
+│       └── columns.json
+│
+├── client/
+│   ├── index.html
+│   ├── insights.html
+│   └── app.js
+│
+├── dataset/
+│   ├── freelancer_data.csv
+│   └── cleaned_data.csv
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Run Locally
+
+```bash
+git clone https://github.com/yourusername/freelancer-earnings-predictor.git
+cd freelancer-earnings-predictor
+pip install -r requirements.txt
+cd server
+python server.py
+```
+## 📈 Key Insights
+- Expert freelancers earn ~4x more than beginners
+- Hourly rate is the strongest predictor
+- Job category significantly impacts earnings
+- Platform has minimal impact
+
+## 🎓 Learnings
+- Proper encoding is critical (fixed Experience Level bug)
+- Feature engineering improves performance
+- Random Forest handles non-linear patterns effectively
+- Deployment requires handling real-time predictions
+
