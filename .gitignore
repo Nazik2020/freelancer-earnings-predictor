@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+server/check_stats.py
+server/stats_output.txt
+.gemini/
+node_modules/
+.vscode/
+.idea/

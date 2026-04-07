@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Model Insights - Financial Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#d3e4fe",
+              "outline": "#76777d",
+              "on-secondary-container": "#00714d",
+              "on-secondary-fixed-variant": "#005236",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#002113",
+              "on-tertiary-fixed-variant": "#3a485c",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#3f465c",
+              "surface-container-low": "#eff4ff",
+              "on-primary-container": "#7c839b",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#dae2fd",
+              "on-tertiary-container": "#76859b",
+              "surface-dim": "#cbdbf5",
+              "surface-tint": "#565e74",
+              "on-primary": "#ffffff",
+              "on-surface": "#0b1c30",
+              "tertiary-fixed-dim": "#b9c7e0",
+              "tertiary-fixed": "#d5e3fd",
+              "surface": "#f8f9ff",
+              "primary": "#000000",
+              "outline-variant": "#c6c6cd",
+              "surface-bright": "#f8f9ff",
+              "on-primary-fixed": "#131b2e",
+              "on-tertiary-fixed": "#0d1c2f",
+              "secondary-fixed": "#6ffbbe",
+              "inverse-primary": "#bec6e0",
+              "tertiary-container": "#0d1c2f",
+              "surface-container-high": "#dce9ff",
+              "on-background": "#0b1c30",
+              "primary-container": "#131b2e",
+              "secondary-container": "#6cf8bb",
+              "secondary-fixed-dim": "#4edea3",
+              "surface-container-highest": "#d3e4fe",
+              "background": "#f8f9ff",
+              "tertiary": "#000000",
+              "surface-container": "#e5eeff",
+              "primary-fixed-dim": "#bec6e0",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "inverse-surface": "#213145",
+              "secondary": "#006c49",
+              "on-surface-variant": "#45464d",
+              "inverse-on-surface": "#eaf1ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+    <!-- TopNavBar (Shared Component) -->
+    <nav
+        class="docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-6 py-3 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm shadow-slate-200/50 dark:shadow-none">
+        <div class="flex items-center gap-2">
+            <span class="text-xl font-bold text-slate-900 dark:text-white tracking-tight font-manrope">Financial
+                Sanctuary</span>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden md:flex items-center gap-6">
+                <a href="index.html"
+                    class="text-slate-500 text-sm dark:text-slate-400 font-manrope font-semibold tracking-tight hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors px-2 py-1 rounded-lg cursor-pointer">Dashboard</a>
+                <span
+                    class="text-emerald-600 dark:text-emerald-400 font-bold font-manrope font-semibold tracking-tight text-sm">Model
+                    Insights</span>
+            </div>
+            <div class="h-6 w-px bg-slate-200 mx-2"></div>
+            <div class="flex items-center gap-3">
+                <span
+                    class="material-symbols-outlined text-slate-500 cursor-pointer p-2 rounded-full hover:bg-slate-100 transition-colors text-[20px]"
+                    data-icon="notifications">notifications</span>
+                <span
+                    class="material-symbols-outlined text-slate-500 cursor-pointer p-2 rounded-full hover:bg-slate-100 transition-colors text-[20px]"
+                    data-icon="settings">settings</span>
+                <img alt="User profile photo" class="w-8 h-8 rounded-full object-cover ring-2 ring-emerald-100"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTqUbXXUcdsfxLaWHc09H5GvwSKpenME3yUOnjJToChUGbq81Btrm3GWNFTXmvAgJxsAPBzD_q7A3kxflYouIsxiMYXkORu5zr9Izbw7hxHOZssYgZXPrGYupR2q-obXsFHGdnVx61e2IBB0CnQDLIclER8yLgy06gHYwGgw9bRyvxAQYCfCYm_sWrC5cCkEazSAw6AG8CsYWtRv8nfFMibj0UbOe927VFQqsfDfqOYvwSRaUEbfeAB0eQ5pTh87d-laLBleVKcmqF">
+            </div>
+        </div>
+    </nav>
+
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- SideNavBar (Shared Component) -->
+<aside class="hidden lg:flex flex-col h-screen w-60 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 border-r border-slate-100 dark:border-slate-800 p-4 pt-20 z-40">
+<div class="flex items-center gap-3 px-3 mb-6">
+    <div class="w-8 h-8 bg-primary-container rounded-xl flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-[18px]"
+            data-icon="architecture">architecture</span>
+    </div>
+    <div>
+        <p class="text-base font-black text-slate-900 dark:text-white font-headline leading-tight">Architect
+        </p>
+        <p class="text-[10px] text-slate-500">Freelancer Pro</p>
+    </div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all rounded-xl" href="index.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="dashboard">dashboard</span>
+<span class="font-manrope text-[13px] font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 rounded-xl" href="insights.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="analytics">analytics</span>
+<span class="font-manrope text-[13px] font-medium">Model Insights</span>
+</a>
+<a id="new-prediction-btn" class="flex items-center gap-3 px-4 py-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all rounded-xl cursor-pointer" href="javascript:void(0)">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+<span class="font-manrope text-[13px] font-medium">New Prediction</span>
+</a>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+<a class="flex items-center gap-3 px-4 py-2.5 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span class="font-manrope text-[13px] font-medium">Support</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all rounded-xl" href="#">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span class="font-manrope text-[13px] font-medium">Logout</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="lg:ml-60 p-6 max-w-[1400px] mx-auto">
+<!-- Top Navigation Anchor (Shared Component Hybrid) -->
+<header class="flex justify-between items-center w-full mb-8 sticky top-0 bg-surface/90 backdrop-blur-xl z-40 py-3 border-b border-surface/0">
+<div>
+<h2 class="text-2xl font-extrabold text-on-surface tracking-tight mb-0.5">Model Insights</h2>
+<p class="text-[13px] text-on-surface-variant font-medium">Analyzing earnings for Senior Product Designer</p>
+</div>
+<div class="flex items-center gap-2">
+<!-- Profile quick-view info or simplified version for insights bar -->
+<div class="text-right hidden sm:block mr-2">
+    <p class="text-[11px] font-bold text-slate-900 leading-none">Architect</p>
+    <p class="text-[9px] text-slate-500">PRO LEVEL</p>
+</div>
+</div>
+</header>
+<!-- Insights Bento Grid -->
+<div class="grid grid-cols-12 gap-6 lg:gap-8">
+<!-- Large Histogram Section -->
+<section class="col-span-12 lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-xl relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+<div>
+<h3 class="text-xl font-headline font-black text-emerald-950 mb-1">Earnings Distribution</h3>
+<p class="text-[11px] text-slate-400 font-bold uppercase tracking-widest">Comparative analysis across the current market dataset</p>
+</div>
+</div>
+<!-- Histogram Visual Mockup -->
+<div class="relative" style="height: 220px;">
+<!-- Histogram Bars Container -->
+<div id="histogram-bars" class="flex items-end gap-1.5 w-full absolute bottom-0 left-0 right-0" style="height: 200px;">
+<div class="flex-1 bg-surface-container rounded-t-md animate-pulse" style="height: 50%;"></div>
+</div>
+</div>
+<div id="histogram-labels" class="mt-4 flex justify-between text-[9px] text-on-surface-variant font-bold tracking-widest uppercase px-2">
+<span>$0</span>
+<span>Loading...</span>
+<span>$20k</span>
+</div>
+</section>
+<!-- Accuracy Metrics -->
+<aside class="col-span-12 lg:col-span-4 space-y-6">
+<div class="bg-primary-container text-white rounded-3xl p-6 relative overflow-hidden shadow-lg shadow-primary-container/20">
+<div class="absolute -right-2 -top-2 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[100px]">verified</span>
+</div>
+<h3 class="text-[12px] font-medium text-primary-fixed mb-5 tracking-wide uppercase">Model Confidence</h3>
+<div class="space-y-5 relative z-10">
+<div>
+<div class="flex justify-between items-end mb-1.5">
+<span id="model-r2" class="text-2xl font-bold tracking-tighter">0.70</span>
+<span class="text-[10px] text-primary-fixed-dim font-medium uppercase tracking-wider">R-Squared</span>
+</div>
+<div class="h-1 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-1.5">
+<span id="model-mae" class="text-2xl font-bold tracking-tighter">$1,138</span>
+<span class="text-[10px] text-primary-fixed-dim font-medium uppercase tracking-wider">Mean Error</span>
+</div>
+<p class="text-[9px] text-primary-fixed uppercase tracking-wider leading-relaxed bg-white/5 inline-block px-2 py-1 rounded">Highly Precise for Niche Creative Roles</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-6 border border-slate-200 shadow-md">
+<h3 class="text-[13px] font-bold mb-4 flex items-center gap-1.5 uppercase tracking-wider">
+<span class="material-symbols-outlined text-secondary text-[16px]">auto_awesome</span>
+                        Key Predictors
+                    </h3>
+<ul id="key-predictors-list" class="space-y-2.5">
+<li class="flex justify-between items-center p-2.5 bg-white/80 rounded-lg shadow-sm border border-slate-50">
+<span class="text-[11px] font-semibold text-slate-700">Loading...</span>
+<span class="text-[11px] font-bold text-secondary">--%</span>
+</li>
+</ul>
+</div>
+</aside>
+<!-- Secondary Charts: Scatter Plots -->
+<section class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-lg">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-[15px] font-bold font-headline">Experience vs Earnings</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">query_stats</span>
+</div>
+<div id="exp-scatter" class="h-48 relative border-l border-b border-outline-variant/30 ml-2 lg:ml-4">
+<div class="text-[11px] text-on-surface-variant p-2 animate-pulse">Loading...</div>
+</div>
+</section>
+<section class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-lg">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-[15px] font-bold font-headline">Projects vs Earnings</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">scatter_plot</span>
+</div>
+<div id="proj-scatter" class="h-48 relative border-l border-b border-outline-variant/30 ml-2 lg:ml-4">
+<div class="text-[11px] text-on-surface-variant p-2 animate-pulse">Loading...</div>
+</div>
+<div class="mt-4 flex justify-between text-[9px] text-on-surface-variant font-bold uppercase tracking-widest px-2 lg:px-4">
+<span>Fewer Projects</span>
+<span>More Projects</span>
+</div>
+</section>
+<section class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-lg">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-[15px] font-bold font-headline">Role vs Earnings</h3>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">bar_chart</span>
+</div>
+<div id="role-scatter" class="h-48 relative border-b border-outline-variant/30">
+<div class="text-[11px] text-on-surface-variant p-2 animate-pulse">Loading...</div>
+</div>
+</section>
+<!-- Qualitative Findings -->
+<section class="col-span-12 bg-white rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-slate-200 shadow-xl">
+<div class="md:w-1/3">
+<h3 class="text-2xl font-extrabold tracking-tight mb-3 font-headline">Strategic Synthesis</h3>
+<p id="synthesis-text" class="text-[13px] text-slate-500 leading-relaxed">The model suggests that your current trajectory is optimized for <span class="text-secondary font-bold">High-Value Retainers</span>.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+<div class="p-5 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+<div class="text-emerald-600 mb-2">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+<h4 class="font-bold text-[12px] mb-1.5 text-emerald-900">Upswing Potential</h4>
+<p id="upswing-text" class="text-[11px] text-emerald-700/80 leading-relaxed">Adding complementary skills could increase your potential.</p>
+</div>
+<div class="p-5 bg-rose-50/50 rounded-2xl border border-rose-100/50">
+<div class="text-rose-500 mb-2">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<h4 class="font-bold text-[12px] mb-1.5 text-rose-900">Efficiency Gap</h4>
+<p id="efficiency-text" class="text-[11px] text-rose-700/80 leading-relaxed">Project timelines may be slightly longer compared to expert medians.</p>
+</div>
+</div>
+</section>
+</div>
+<footer class="mt-12 pb-8 text-center opacity-60 hover:opacity-100 transition-opacity">
+<p class="text-[9px] text-slate-400 uppercase tracking-[0.25em] font-bold">Prediction Engine • Model v3.0.0-FIXED</p>
+</footer>
+</main>
+<!-- Mobile Navigation -->
+<nav class="lg:hidden fixed bottom-0 left-0 right-0 glass-effect border-t border-slate-100 p-2 flex justify-around items-center z-50 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+<a class="p-2.5 flex flex-col items-center gap-1 text-slate-400 no-underline" href="index.html">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-[11px] uppercase tracking-wider font-bold">Dash</span>
+</a>
+<button class="p-2.5 flex flex-col items-center gap-1 text-emerald-600">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+<span class="text-[11px] uppercase tracking-wider font-bold">Insights</span>
+</button>
+<div class="p-2.5 flex flex-col items-center gap-1 text-slate-400 opacity-40">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-[11px] uppercase tracking-wider font-bold">Config</span>
+</div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="api-config.js"></script>
+<script>
+(async function () {
+    console.log('Loading model insights...');
+    const found = await window.probeApiBase();
+    
+    // Global Sidebar - New Prediction Reset
+    $('#new-prediction-btn').on('click', function() {
+        localStorage.removeItem('freelance_predictor_state');
+        window.location.href = 'index.html';
+    });
+
+    if (!found) {
+        const msg =
+            '<div class="p-4 text-center text-[12px] text-red-600 leading-relaxed max-w-md mx-auto">' +
+            '<strong>API not running</strong><br><br>' +
+            'Open <code class="bg-slate-100 px-1 rounded">freelance salary predictor\\server\\</code> and double-click ' +
+            '<strong>run_server.bat</strong>. Wait for <code>3.0.0-FIXED</code>, then refresh.<br><br>' +
+            '<a class="text-secondary underline" href="http://127.0.0.1:5001/health" target="_blank">Test: 127.0.0.1:5001/health</a>' +
+            '</div>';
+        $('#histogram-bars').html(msg);
+        $('#key-predictors-list').html('<li class="text-[11px] text-red-500">Start run_server.bat first</li>');
+        console.error('probeApiBase: no Flask on 5001 or 5000');
+        return;
+    }
+    const API_URL = found.base;
+    if (found.health && String(found.health.version || '').indexOf('2.1') === 0) {
+        console.warn('Legacy API — use run_server.bat for fixed experience chart.');
+    }
+
+$.get(API_URL + '/get_model_insights?nocache=' + Date.now(), function(data) {
+    console.log('Model insights loaded:', data);
+
+    // Retrieve user state
+    let state = {};
+    try {
+        const saved = localStorage.getItem('freelance_predictor_state');
+        if (saved) state = JSON.parse(saved);
+    } catch(e) {}
+    
+    let predictedValue = 0;
+    if (state.last_prediction && state.last_prediction !== '--') {
+        predictedValue = parseFloat(state.last_prediction.replace(/,/g, ''));
+    }
+
+    // 1. Histogram bars
+    const hist = data.earnings_distribution && data.earnings_distribution.histogram;
+    if (hist && hist.length) {
+        const maxCount = Math.max(...hist.map(b => b.count));
+        let barsHtml = '';
+        hist.forEach((bin) => {
+            const pxHeight = Math.max(Math.round((bin.count / maxCount) * 190), 8);
+            barsHtml += `<div class="flex-1 rounded-t-lg transition-all group relative border border-slate-400 border-b-0 shadow-md" style="height:${pxHeight}px; background: #94a3b8;">
+                <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 bg-slate-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">${bin.count} freelancers</div>
+            </div>`;
+        });
+        
+        // Add "You are here" logic
+        if (predictedValue > 0) {
+            const minEarn = hist[0].min;
+            const maxEarn = hist[hist.length - 1].max;
+            let percent = ((predictedValue - minEarn) / (maxEarn - minEarn)) * 100;
+            percent = Math.max(0, Math.min(100, percent));
+            
+            barsHtml += `<div class="absolute bottom-0 w-px bg-slate-900 border-l border-slate-900 z-20 pointer-events-none" style="left:${percent}%; height: 215px;">
+                <div class="absolute bottom-[215px] left-1/2 -translate-x-1/2 bg-slate-950 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg whitespace-nowrap flex flex-col items-center">
+                    You are here: $${Math.round(predictedValue/1000)}k
+                    <div class="absolute top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-950"></div>
+                </div>
+            </div>`;
+        }
+
+        $('#histogram-bars').html(barsHtml);
+        
+        const firstBin = hist[0];
+        const lastBin = hist[hist.length - 1];
+        $('#histogram-labels').html(`
+            <span>$${Math.round(firstBin.min/1000)}K</span>
+            <span>$${Math.round((firstBin.min + lastBin.max)/2000)}K</span>
+            <span>$${Math.round(lastBin.max/1000)}K</span>
+        `);
+    }
+
+    // 2. Key predictors from feature importance
+    const fi = data.feature_importance;
+    if (fi) {
+        if (data.model_r2) $('#model-r2').text(data.model_r2);
+        if (data.model_mae) $('#model-mae').text('$' + Math.round(data.model_mae).toLocaleString());
+
+        const entries = Object.entries(fi).sort((a,b) => b[1]-a[1]).slice(0, 4);
+        let html = '';
+        entries.forEach(([name, pct]) => {
+            html += `<li class="flex justify-between items-center p-2.5 bg-white/80 rounded-lg shadow-sm border border-slate-50">
+                <span class="text-[11px] font-semibold text-slate-700">${name}</span>
+                <span class="text-[11px] font-bold text-secondary">${pct}%</span>
+            </li>`;
+        });
+        $('#key-predictors-list').html(html);
+    }
+
+    // 3. Experience vs earnings — 3 bar chart
+    const expData = data.experience_vs_earnings;
+    if (expData) {
+        const levels = ['Beginner', 'Intermediate', 'Expert'];
+        const vals = levels.map(l => expData[l] || 0);
+        const maxVal = Math.max(...vals);
+        let html = '<div class="w-full flex items-end justify-between gap-4 px-4 pb-2" style="height: 140px;">';
+        const colors = ['#94a3b8','#64748b','#475569']; 
+        levels.forEach((level, i) => {
+            const pct = Math.round((vals[i]/maxVal)*100) || 5;
+            html += `<div class="flex-1 flex flex-col items-center justify-end h-full gap-2">
+                <span class="text-[11px] font-bold text-secondary mt-auto">$${(vals[i]/1000).toFixed(1)}k</span>
+                <div class="w-full rounded-t-md transition-all border border-slate-400/80 border-b-0 shadow-md" style="height:${pct}%; min-height: 5px; background:${colors[i]}"></div>
+                <span class="text-[9px] font-semibold text-slate-600 uppercase tracking-wide mt-1">${level}</span>
+            </div>`;
+        });
+        html += '</div>';
+        $('#exp-scatter').css({'height':'180px', 'padding-top': '20px'}).html(html).css({'border':'none'});
+    }
+
+    // 4. Projects vs Earnings scatter dots
+    const points = data.projects_vs_earnings;
+    if (points && points.length) {
+        const maxJobs = Math.max(...points.map(p => p.Job_Completed));
+        const maxEarn = Math.max(...points.map(p => p.Earnings_USD));
+        let html = '<svg class="absolute inset-0 w-full h-full overflow-visible"><line stroke="#c6c6cd" stroke-dasharray="3" stroke-width="1" x1="0" x2="100%" y1="100%" y2="0"/></svg>';
+        points.forEach(p => {
+            const left = Math.round((p.Job_Completed / maxJobs) * 92) + 2;
+            const bottom = Math.round((p.Earnings_USD / maxEarn) * 88) + 2;
+            html += `<div class="absolute w-1.5 h-1.5 rounded-full bg-slate-400" style="left:${left}%;bottom:${bottom}%" title="Jobs:${p.Job_Completed} Earn:$${Math.round(p.Earnings_USD)}"></div>`;
+        });
+        $('#proj-scatter').html(html);
+    }
+    
+    // 5. Role vs Earnings Chart - Sorter Top 5
+    const roleData = data.category_vs_earnings;
+    if (roleData) {
+        // Sort roles by earnings value descending and take top 5
+        const roles = Object.entries(roleData)
+            .sort(([, a], [, b]) => b - a)
+            .slice(0, 5)
+            .map(([role]) => role);
+        
+        const vals = roles.map(r => roleData[r] || 0);
+        const maxVal = Math.max(...vals);
+        let html = '<div class="w-full flex items-end justify-between gap-3 px-2 pb-6" style="height: 150px;">';
+        roles.forEach((r, i) => {
+            const pct = Math.round((vals[i] / maxVal) * 100) || 5;
+            const barH = Math.round(pct * 1.1); // Scale to ~110px max
+            html += `<div class="flex-1 flex flex-col items-center justify-end group">
+                <span class="text-[9px] font-bold text-slate-600 mb-1">$${(vals[i]/1000).toFixed(1)}k</span>
+                <div class="w-full rounded-t-md transition-all bg-slate-300 group-hover:bg-slate-500 border border-slate-400 border-b-0 shadow-sm" style="height:${barH}px; min-height: 5px;"></div>
+                <div class="mt-2 w-full">
+                    <p class="text-[8px] font-bold text-slate-500 uppercase tracking-tighter text-center truncate" title="${r}">${r.split(' ')[0]}</p>
+                </div>
+            </div>`;
+        });
+        html += '</div>';
+        $('#role-scatter').css({'height':'auto', 'padding-top': '20px'}).html(html).css({'border':'none'});
+    }
+
+    // 6. Dynamic Qualitative Insights
+    if (state.job_category) {
+        const role = state.job_category;
+        const exp = state.experience_level; // 'Beginner' 'Intermediate' 'Expert'
+        const jobs = parseInt(state.jobs_completed || 0);
+        const complexity = parseInt(state.project_complexity || 0);
+        
+        // Main Synthesis
+        let synthesis = `The model suggests that your current trajectory as a <span class="text-secondary font-bold">${role}</span> is strongly aligned with market demand.`;
+        if (exp === 'Expert' && jobs > 50) {
+            synthesis = `As an elite <span class="text-secondary font-bold">${role}</span>, your profile is optimized for <span class="text-secondary font-bold">Premium Enterprise Contracts</span>. Focus on high-retention high-ticket deals.`;
+        } else if (exp === 'Beginner') {
+            synthesis = `Your starting profile as a <span class="text-secondary font-bold">${role}</span> shows high potential. Focus on building a niche portfolio to accelerate early earning growth.`;
+        }
+        $('#synthesis-text').html(synthesis);
+        
+        // Upswing Potential
+        let upswingTitle = "Upswing Potential";
+        let upswingDesc = `Increasing project complexity to handle advanced engagements could raise predicted annual earnings.`;
+        
+        if (complexity < 4) {
+            const potentialBoost = Math.max(12, (5 - complexity) * 4.5);
+            upswingDesc = `Moving from tier-${complexity} to tier-5 complexity projects could unlock a <span class="text-emerald-600 font-bold">${potentialBoost}% increase</span> in projected revenue.`;
+        } else {
+            upswingDesc = `Your current complexity handling is top-tier. Adding specialized cross-domain skills (e.g., AI/ML or Cloud Arch) could further push your ceiling by <span class="text-emerald-600 font-bold">18-22%</span>.`;
+        }
+        $('#upswing-text').html(upswingDesc);
+        
+        // Efficiency Gap / Strategy
+        let stratTitle = "Efficiency Gap";
+        let stratDesc = `Current metrics show solid completion rates compared to peer medians.`;
+        
+        if (jobs < 20) {
+            stratDesc = `Your volume is lower than the expert median of 45+ projects. Increasing your "Project Velocity" will stabilize your monthly earnings predictability significantly.`;
+        } else if (exp === 'Intermediate') {
+            stratDesc = `You are performing well in the intermediate bracket. To break into the "Expert" tier, focus on reducing project delivery friction through better automation tools.`;
+        } else {
+            stratDesc = `Peer analysis shows your delivery metrics are optimized. Consider raising your hourly baseline by $15-20 to test market price elasticity.`;
+        }
+        $('#efficiency-text').html(stratDesc);
+    }
+
+}).fail(function(err) {
+    console.error('Failed to load model insights:', err);
+    $('#histogram-bars').html('<div class="w-full text-center text-[11px] text-red-400">Failed to load insights. Check server window for errors.</div>');
+    $('#key-predictors-list').html('<li class="text-[11px] text-red-400">Failed to load</li>');
+});
+})();
+</script>
+</body></html>
