@@ -20,7 +20,7 @@
 
 | Dashboard | Insights |
 |----------|----------|
-| ![Dashboard](screenshots/dashboard.png) | ![Insights](screenshots/insights.png) |
+| ![Dashboard]([screenshots/dashboard.png](https://github.com/Nazik2020/freelancer-earnings-predictor/blob/main/photo_2026-04-07_15-06-11.jpg)) | ![Insights](screenshots/insights.png) |
 
 ---
 
