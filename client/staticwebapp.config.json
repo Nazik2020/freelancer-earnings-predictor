@@ -3,7 +3,7 @@
     { "route": "/insights", "rewrite": "/insights.html" }
   ],
   "navigationFallback": {
-    "document": "/index.html"
+    "rewrite": "/index.html"
   },
   "globalHeaders": {
     "Cache-Control": "no-cache"
