@@ -1,0 +1,617 @@
+2026-04-16T14:47:03.2234001Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T14:47:05.2844246Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T14:47:05.2849165Z Container start method called.
+2026-04-16T14:47:05.2905449Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:47:05.2911031Z Establishing network.
+2026-04-16T14:47:05.2923189Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T14:47:05.8767355Z Container is starting.
+2026-04-16T14:47:05.8768756Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:47:05.8770208Z Establishing user namespace if not established already.
+2026-04-16T14:47:05.8771667Z Establishing network if not established already.
+2026-04-16T14:47:05.8780712Z Mounting volumes.
+2026-04-16T14:47:05.8850464Z Nested mountpoint 
+2026-04-16T14:47:05.9140824Z Nested mountpoint volatile/logs
+2026-04-16T14:47:05.9617818Z Nested mountpoint 
+2026-04-16T14:47:06.0136433Z Nested mountpoint 
+2026-04-16T14:47:06.0414543Z Nested mountpoint 
+2026-04-16T14:47:07.6953246Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T14:47:07.6958356Z Creating container.
+2026-04-16T14:47:07.6959978Z Creating pipes for streaming container io.
+2026-04-16T14:47:07.6968110Z Creating stdout named pipe at /podr/container/pipe/4e8eecea53da_freelance-salary-api/stdout_9d3ca901e48e41c2a72959780e035a5e.
+2026-04-16T14:47:07.7043511Z Successfully created stdout named pipe at: /podr/container/pipe/4e8eecea53da_freelance-salary-api/stdout_9d3ca901e48e41c2a72959780e035a5e.
+2026-04-16T14:47:07.7050524Z Opening named pipe /podr/container/pipe/4e8eecea53da_freelance-salary-api/stdout_9d3ca901e48e41c2a72959780e035a5e for reading in non-blocking mode.
+2026-04-16T14:47:07.7147329Z Successfully opened named pipe: /podr/container/pipe/4e8eecea53da_freelance-salary-api/stdout_9d3ca901e48e41c2a72959780e035a5e.
+2026-04-16T14:47:07.7153872Z Successfully removed non-blocking flag from /podr/container/pipe/4e8eecea53da_freelance-salary-api/stdout_9d3ca901e48e41c2a72959780e035a5e.
+2026-04-16T14:47:07.7171837Z Creating stderr named pipe at /podr/container/pipe/4e8eecea53da_freelance-salary-api/stderr_74eb31e19faf478fb741bfdc5bea3b6a.
+2026-04-16T14:47:07.7184891Z Successfully created stderr named pipe at: /podr/container/pipe/4e8eecea53da_freelance-salary-api/stderr_74eb31e19faf478fb741bfdc5bea3b6a.
+2026-04-16T14:47:07.7199363Z Opening named pipe /podr/container/pipe/4e8eecea53da_freelance-salary-api/stderr_74eb31e19faf478fb741bfdc5bea3b6a for reading in non-blocking mode.
+2026-04-16T14:47:07.7201513Z Successfully opened named pipe: /podr/container/pipe/4e8eecea53da_freelance-salary-api/stderr_74eb31e19faf478fb741bfdc5bea3b6a.
+2026-04-16T14:47:07.7203392Z Successfully removed non-blocking flag from /podr/container/pipe/4e8eecea53da_freelance-salary-api/stderr_74eb31e19faf478fb741bfdc5bea3b6a.
+2026-04-16T14:47:07.7231702Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T14:47:09.1059046Z Starting container: 4e8eecea53da_freelance-salary-api.
+2026-04-16T14:47:09.3205785Z Starting watchers and probes.
+2026-04-16T14:47:09.7673075Z Starting metrics collection.
+2026-04-16T14:47:09.9168723Z Container is running.
+2026-04-16T14:47:09.9347034Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:47:12.2811694Z Container start method finished after 6884 ms.
+2026-04-16T14:47:12.3521138Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:47:12.6391904Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T14:47:46.1708191Z Site startup probe succeeded after 33.0317735 seconds.
+2026-04-16T14:47:46.4422491Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 33.0317735 seconds., DetailsLevel: INFO
+2026-04-16T14:47:46.8610667Z Site is running with deployment version: ff603fa6-5024-44f8-8cf4-c73f28430ae3
+2026-04-16T14:47:46.8622331Z Site started.
+2026-04-16T14:47:46.8623783Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/16/2026 14:47:46 (UTC), DetailsLevel: INFO
+2026-04-16T14:47:46.9490905Z Site is running with patch version PYTHON 3.11.14
+2026-04-16T14:49:02.0860848Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T14:49:02.6334136Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T14:49:02.6350286Z Container start method called.
+2026-04-16T14:49:02.6354796Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:49:02.6356706Z Establishing network.
+2026-04-16T14:49:02.6358548Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T14:49:02.8595255Z Container is starting.
+2026-04-16T14:49:02.8596028Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:49:02.8597197Z Establishing user namespace if not established already.
+2026-04-16T14:49:02.8598250Z Establishing network if not established already.
+2026-04-16T14:49:02.8599500Z Mounting volumes.
+2026-04-16T14:49:02.8601840Z Nested mountpoint 
+2026-04-16T14:49:02.8634063Z Nested mountpoint volatile/logs
+2026-04-16T14:49:02.8704869Z Nested mountpoint 
+2026-04-16T14:49:02.8715580Z Nested mountpoint 
+2026-04-16T14:49:02.8747378Z Nested mountpoint 
+2026-04-16T14:49:03.1676738Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T14:49:03.1679635Z Creating container.
+2026-04-16T14:49:03.1685393Z Creating pipes for streaming container io.
+2026-04-16T14:49:03.1697475Z Creating stdout named pipe at /podr/container/pipe/c45e601d394e_freelance-salary-api/stdout_9e4bdbae5af2447098a44487e21e1ecd.
+2026-04-16T14:49:03.1710136Z Successfully created stdout named pipe at: /podr/container/pipe/c45e601d394e_freelance-salary-api/stdout_9e4bdbae5af2447098a44487e21e1ecd.
+2026-04-16T14:49:03.1720864Z Opening named pipe /podr/container/pipe/c45e601d394e_freelance-salary-api/stdout_9e4bdbae5af2447098a44487e21e1ecd for reading in non-blocking mode.
+2026-04-16T14:49:03.1731491Z Successfully opened named pipe: /podr/container/pipe/c45e601d394e_freelance-salary-api/stdout_9e4bdbae5af2447098a44487e21e1ecd.
+2026-04-16T14:49:03.1737776Z Successfully removed non-blocking flag from /podr/container/pipe/c45e601d394e_freelance-salary-api/stdout_9e4bdbae5af2447098a44487e21e1ecd.
+2026-04-16T14:49:03.1749912Z Creating stderr named pipe at /podr/container/pipe/c45e601d394e_freelance-salary-api/stderr_33bd56905a9a4e86b08990059893a8e2.
+2026-04-16T14:49:03.1760874Z Successfully created stderr named pipe at: /podr/container/pipe/c45e601d394e_freelance-salary-api/stderr_33bd56905a9a4e86b08990059893a8e2.
+2026-04-16T14:49:03.1762107Z Opening named pipe /podr/container/pipe/c45e601d394e_freelance-salary-api/stderr_33bd56905a9a4e86b08990059893a8e2 for reading in non-blocking mode.
+2026-04-16T14:49:03.1763448Z Successfully opened named pipe: /podr/container/pipe/c45e601d394e_freelance-salary-api/stderr_33bd56905a9a4e86b08990059893a8e2.
+2026-04-16T14:49:03.1764677Z Successfully removed non-blocking flag from /podr/container/pipe/c45e601d394e_freelance-salary-api/stderr_33bd56905a9a4e86b08990059893a8e2.
+2026-04-16T14:49:03.1781877Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T14:49:03.7126868Z Starting container: c45e601d394e_freelance-salary-api.
+2026-04-16T14:49:03.7534279Z Starting watchers and probes.
+2026-04-16T14:49:03.7539691Z Starting metrics collection.
+2026-04-16T14:49:03.7551169Z Container is running.
+2026-04-16T14:49:03.7554382Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:49:03.8023958Z Container start method finished after 1167 ms.
+2026-04-16T14:49:03.8026898Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:49:03.8027208Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T14:49:22.7163670Z Container has finished running with exit code: 127.
+2026-04-16T14:49:22.7221140Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T14:49:22.7333827Z Stop and delete container. Retry count = 0
+2026-04-16T14:49:22.7363440Z Stopping container: c45e601d394e_freelance-salary-api.
+2026-04-16T14:49:22.8713435Z Deleting container: c45e601d394e_freelance-salary-api. Retry count = 0
+2026-04-16T14:49:28.0657673Z Container spec TerminationMessagePolicy  path 
+2026-04-16T14:49:28.0685302Z Container is terminated. Total time elapsed: 5345 ms.
+2026-04-16T14:49:28.0687606Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T14:49:28.0722803Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.0805518Z Site startup probe failed after 24.27715 seconds.
+2026-04-16T14:49:28.1432739Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.1501173Z Failed to start site. Revert by stopping site.
+2026-04-16T14:49:28.1552526Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.1594286Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.1602684Z Site: freelance-salary-api stopped.
+2026-04-16T14:49:48.5737339Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/16/2026 14:47:46 (UTC), DetailsLevel: INFO
+2026-04-16T14:49:48.5740758Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 04/16/2026 14:47:46 (UTC), DetailsLevel: INFO
+2026-04-16T14:49:48.5742199Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T14:49:48.5778574Z Stop and delete container. Retry count = 0
+2026-04-16T14:49:48.5779606Z Stopping container: 4e8eecea53da_freelance-salary-api.
+2026-04-16T14:49:53.6410202Z Deleting container: 4e8eecea53da_freelance-salary-api. Retry count = 0
+2026-04-16T14:49:56.8109146Z Container spec TerminationMessagePolicy  path 
+2026-04-16T14:49:56.8111046Z Container is terminated. Total time elapsed: 8236 ms.
+2026-04-16T14:49:56.8114728Z Site: freelance-salary-api stopped.
+2026-04-16T14:49:28.1726966Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.4393626Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:49:28.5404178Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:49:28 (UTC), DetailsLevel: ERR
+2026-04-16T14:49:28.5469497Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:49:28 (UTC), DetailsLevel: ERR
+2026-04-16T14:53:07.0370015Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:49:28 (UTC), DetailsLevel: ERR
+2026-04-16T14:53:07.6718032Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:49:28 (UTC), DetailsLevel: ERR
+2026-04-16T14:53:07.6725162Z Container start method called.
+2026-04-16T14:53:07.6774093Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:53:07.6775679Z Establishing network.
+2026-04-16T14:53:07.6777224Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T14:53:08.0250228Z Container is starting.
+2026-04-16T14:53:08.0251345Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:53:08.0254001Z Establishing user namespace if not established already.
+2026-04-16T14:53:08.0255475Z Establishing network if not established already.
+2026-04-16T14:53:08.0256887Z Mounting volumes.
+2026-04-16T14:53:08.0271789Z Nested mountpoint 
+2026-04-16T14:53:08.0310146Z Nested mountpoint volatile/logs
+2026-04-16T14:53:08.0334337Z Nested mountpoint 
+2026-04-16T14:53:08.0353887Z Nested mountpoint 
+2026-04-16T14:53:08.0378906Z Nested mountpoint 
+2026-04-16T14:53:08.1721546Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T14:53:08.1723470Z Creating container.
+2026-04-16T14:53:08.1725275Z Creating pipes for streaming container io.
+2026-04-16T14:53:08.1738949Z Creating stdout named pipe at /podr/container/pipe/404d1c5066ea_freelance-salary-api/stdout_ea775815e7824d0fbeee624855f73db0.
+2026-04-16T14:53:08.1744807Z Successfully created stdout named pipe at: /podr/container/pipe/404d1c5066ea_freelance-salary-api/stdout_ea775815e7824d0fbeee624855f73db0.
+2026-04-16T14:53:08.1746615Z Opening named pipe /podr/container/pipe/404d1c5066ea_freelance-salary-api/stdout_ea775815e7824d0fbeee624855f73db0 for reading in non-blocking mode.
+2026-04-16T14:53:08.1748657Z Successfully opened named pipe: /podr/container/pipe/404d1c5066ea_freelance-salary-api/stdout_ea775815e7824d0fbeee624855f73db0.
+2026-04-16T14:53:08.1750554Z Successfully removed non-blocking flag from /podr/container/pipe/404d1c5066ea_freelance-salary-api/stdout_ea775815e7824d0fbeee624855f73db0.
+2026-04-16T14:53:08.1759792Z Creating stderr named pipe at /podr/container/pipe/404d1c5066ea_freelance-salary-api/stderr_f28bdfe91dc74d97ad0e5dd72d7a4aec.
+2026-04-16T14:53:08.1761454Z Successfully created stderr named pipe at: /podr/container/pipe/404d1c5066ea_freelance-salary-api/stderr_f28bdfe91dc74d97ad0e5dd72d7a4aec.
+2026-04-16T14:53:08.1762547Z Opening named pipe /podr/container/pipe/404d1c5066ea_freelance-salary-api/stderr_f28bdfe91dc74d97ad0e5dd72d7a4aec for reading in non-blocking mode.
+2026-04-16T14:53:08.1763866Z Successfully opened named pipe: /podr/container/pipe/404d1c5066ea_freelance-salary-api/stderr_f28bdfe91dc74d97ad0e5dd72d7a4aec.
+2026-04-16T14:53:08.1764954Z Successfully removed non-blocking flag from /podr/container/pipe/404d1c5066ea_freelance-salary-api/stderr_f28bdfe91dc74d97ad0e5dd72d7a4aec.
+2026-04-16T14:53:08.1767173Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T14:53:08.5705845Z Starting container: 404d1c5066ea_freelance-salary-api.
+2026-04-16T14:53:08.5980412Z Starting watchers and probes.
+2026-04-16T14:53:08.5983693Z Starting metrics collection.
+2026-04-16T14:53:08.6006206Z Container is running.
+2026-04-16T14:53:08.6007220Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:53:08.6217162Z Container start method finished after 948 ms.
+2026-04-16T14:53:08.6219313Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:53:08.6221368Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T14:53:23.7568734Z Container has finished running with exit code: 127.
+2026-04-16T14:53:23.7570664Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T14:53:23.8271002Z Stop and delete container. Retry count = 0
+2026-04-16T14:53:23.8273503Z Stopping container: 404d1c5066ea_freelance-salary-api.
+2026-04-16T14:53:23.9103694Z Deleting container: 404d1c5066ea_freelance-salary-api. Retry count = 0
+2026-04-16T14:53:26.8774616Z Container spec TerminationMessagePolicy  path 
+2026-04-16T14:53:26.8797606Z Container is terminated. Total time elapsed: 3107 ms.
+2026-04-16T14:53:26.8799057Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T14:53:26.8805372Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:49:28, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:53:26.8988793Z Site startup probe failed after 18.2724918 seconds.
+2026-04-16T14:53:26.9553098Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:53:26.9664378Z Failed to start site. Revert by stopping site.
+2026-04-16T14:53:26.9766580Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:53:26.9769350Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T14:53:26.9769528Z Site: freelance-salary-api stopped.
+2026-04-16T14:59:47.9366015Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:53:27 (UTC), DetailsLevel: WARN
+2026-04-16T14:59:48.4347279Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 14:53:27 (UTC), DetailsLevel: WARN
+2026-04-16T14:59:48.4351530Z Container start method called.
+2026-04-16T14:59:48.4352425Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:59:48.4359453Z Establishing network.
+2026-04-16T14:59:48.4361341Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T14:59:48.7517048Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.4:13209
+2026-04-16T14:59:48.7518790Z Container is starting.
+2026-04-16T14:59:48.7519600Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T14:59:48.7521112Z Establishing user namespace if not established already.
+2026-04-16T14:59:48.7522613Z Establishing network if not established already.
+2026-04-16T14:59:48.7524159Z Mounting volumes.
+2026-04-16T14:59:48.7526036Z Nested mountpoint 
+2026-04-16T14:59:48.7545493Z Nested mountpoint volatile/logs
+2026-04-16T14:59:48.7579685Z Nested mountpoint 
+2026-04-16T14:59:48.7607956Z Nested mountpoint 
+2026-04-16T14:59:48.7667934Z Nested mountpoint 
+2026-04-16T14:59:48.8300739Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T14:59:48.8312578Z Creating container.
+2026-04-16T14:59:48.8315189Z Creating pipes for streaming container io.
+2026-04-16T14:59:48.8318678Z Creating stdout named pipe at /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stdout_441b7726841a468ca8d02b3816dc56a0.
+2026-04-16T14:59:48.8324938Z Successfully created stdout named pipe at: /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stdout_441b7726841a468ca8d02b3816dc56a0.
+2026-04-16T14:59:48.8328472Z Opening named pipe /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stdout_441b7726841a468ca8d02b3816dc56a0 for reading in non-blocking mode.
+2026-04-16T14:59:48.8330324Z Successfully opened named pipe: /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stdout_441b7726841a468ca8d02b3816dc56a0.
+2026-04-16T14:59:48.8336928Z Successfully removed non-blocking flag from /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stdout_441b7726841a468ca8d02b3816dc56a0.
+2026-04-16T14:59:48.8338859Z Creating stderr named pipe at /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stderr_4eb90fc28a734ae39fa8c13a19fefaa0.
+2026-04-16T14:59:48.8343279Z Successfully created stderr named pipe at: /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stderr_4eb90fc28a734ae39fa8c13a19fefaa0.
+2026-04-16T14:59:48.8344630Z Opening named pipe /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stderr_4eb90fc28a734ae39fa8c13a19fefaa0 for reading in non-blocking mode.
+2026-04-16T14:59:48.8346096Z Successfully opened named pipe: /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stderr_4eb90fc28a734ae39fa8c13a19fefaa0.
+2026-04-16T14:59:48.8347917Z Successfully removed non-blocking flag from /podr/container/pipe/4f67bb847b6d_freelance-salary-api/stderr_4eb90fc28a734ae39fa8c13a19fefaa0.
+2026-04-16T14:59:48.8349640Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T14:59:49.1159438Z Starting container: 4f67bb847b6d_freelance-salary-api.
+2026-04-16T14:59:49.1373670Z Starting watchers and probes.
+2026-04-16T14:59:49.1376783Z Starting metrics collection.
+2026-04-16T14:59:49.1378746Z Container is running.
+2026-04-16T14:59:49.1380092Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:59:49.1560710Z Container start method finished after 719 ms.
+2026-04-16T14:59:49.1654869Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T14:59:49.1655248Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:00:05.5237919Z Site startup probe succeeded after 16.3578011 seconds.
+2026-04-16T15:00:05.5922696Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 16.3578011 seconds., DetailsLevel: INFO
+2026-04-16T15:00:05.8330179Z Site is running with deployment version: 28ae1e7e-3074-43ad-baff-1c6ae6878dfc
+2026-04-16T15:00:05.8434019Z Site started.
+2026-04-16T15:00:05.8435338Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 04/16/2026 15:00:05 (UTC), DetailsLevel: INFO
+2026-04-16T15:00:05.8507782Z Site is running with patch version PYTHON 3.11.14
+2026-04-16T15:05:18.8191157Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T15:05:19.6231705Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-04-16T15:05:19.6250539Z Container start method called.
+2026-04-16T15:05:19.6288597Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:05:19.6290067Z Establishing network.
+2026-04-16T15:05:19.6307540Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:05:20.1248626Z Container is starting.
+2026-04-16T15:05:20.1259259Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:05:20.1266216Z Establishing user namespace if not established already.
+2026-04-16T15:05:20.1271618Z Establishing network if not established already.
+2026-04-16T15:05:20.1281127Z Mounting volumes.
+2026-04-16T15:05:20.1291252Z Nested mountpoint 
+2026-04-16T15:05:20.1412034Z Nested mountpoint volatile/logs
+2026-04-16T15:05:20.1565792Z Nested mountpoint 
+2026-04-16T15:05:20.1617004Z Nested mountpoint 
+2026-04-16T15:05:20.1624339Z Nested mountpoint 
+2026-04-16T15:05:20.4138521Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:05:20.4157348Z Creating container.
+2026-04-16T15:05:20.4159130Z Creating pipes for streaming container io.
+2026-04-16T15:05:20.4161570Z Creating stdout named pipe at /podr/container/pipe/67a732408741_freelance-salary-api/stdout_5159399c37f048e384a48b6f5da07916.
+2026-04-16T15:05:20.4170851Z Successfully created stdout named pipe at: /podr/container/pipe/67a732408741_freelance-salary-api/stdout_5159399c37f048e384a48b6f5da07916.
+2026-04-16T15:05:20.4186641Z Opening named pipe /podr/container/pipe/67a732408741_freelance-salary-api/stdout_5159399c37f048e384a48b6f5da07916 for reading in non-blocking mode.
+2026-04-16T15:05:20.4217617Z Successfully opened named pipe: /podr/container/pipe/67a732408741_freelance-salary-api/stdout_5159399c37f048e384a48b6f5da07916.
+2026-04-16T15:05:20.4221488Z Successfully removed non-blocking flag from /podr/container/pipe/67a732408741_freelance-salary-api/stdout_5159399c37f048e384a48b6f5da07916.
+2026-04-16T15:05:20.4223628Z Creating stderr named pipe at /podr/container/pipe/67a732408741_freelance-salary-api/stderr_7d2d37f3e49f4d0593c0bbfb7e8b4234.
+2026-04-16T15:05:20.4225448Z Successfully created stderr named pipe at: /podr/container/pipe/67a732408741_freelance-salary-api/stderr_7d2d37f3e49f4d0593c0bbfb7e8b4234.
+2026-04-16T15:05:20.4226901Z Opening named pipe /podr/container/pipe/67a732408741_freelance-salary-api/stderr_7d2d37f3e49f4d0593c0bbfb7e8b4234 for reading in non-blocking mode.
+2026-04-16T15:05:20.4228523Z Successfully opened named pipe: /podr/container/pipe/67a732408741_freelance-salary-api/stderr_7d2d37f3e49f4d0593c0bbfb7e8b4234.
+2026-04-16T15:05:20.4229808Z Successfully removed non-blocking flag from /podr/container/pipe/67a732408741_freelance-salary-api/stderr_7d2d37f3e49f4d0593c0bbfb7e8b4234.
+2026-04-16T15:05:20.4231861Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:05:20.7408964Z Starting container: 67a732408741_freelance-salary-api.
+2026-04-16T15:05:20.7670238Z Starting watchers and probes.
+2026-04-16T15:05:20.7757895Z Starting metrics collection.
+2026-04-16T15:05:20.7759940Z Container is running.
+2026-04-16T15:05:20.7760777Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:05:20.8089244Z Container start method finished after 1183 ms.
+2026-04-16T15:05:20.8097170Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:05:20.8101678Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:05:39.2978992Z Container has finished running with exit code: 1.
+2026-04-16T15:05:39.2980732Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:05:39.3023780Z Stop and delete container. Retry count = 0
+2026-04-16T15:05:39.3028735Z Stopping container: 67a732408741_freelance-salary-api.
+2026-04-16T15:05:39.3634088Z Deleting container: 67a732408741_freelance-salary-api. Retry count = 0
+2026-04-16T15:05:42.8191098Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:05:42.8220049Z Container is terminated. Total time elapsed: 3519 ms.
+2026-04-16T15:05:42.8229204Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:05:42.8248697Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:05:42.8612998Z Site startup probe failed after 22.0086151 seconds.
+2026-04-16T15:05:42.9272521Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:05:42.9367204Z Failed to start site. Revert by stopping site.
+2026-04-16T15:05:42.9368227Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:05:42.9400357Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:05:42.9400635Z Site: freelance-salary-api stopped.
+2026-04-16T15:06:03.6269261Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 04/16/2026 15:00:05 (UTC), DetailsLevel: INFO
+2026-04-16T15:06:03.6303619Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 14:53:26, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 04/16/2026 15:00:05 (UTC), DetailsLevel: INFO
+2026-04-16T15:06:03.6306929Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:06:03.6643294Z Stop and delete container. Retry count = 0
+2026-04-16T15:06:03.6671160Z Stopping container: 4f67bb847b6d_freelance-salary-api.
+2026-04-16T15:06:08.7979319Z Deleting container: 4f67bb847b6d_freelance-salary-api. Retry count = 0
+2026-04-16T15:06:11.3846130Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:06:11.3849683Z Container is terminated. Total time elapsed: 7754 ms.
+2026-04-16T15:06:11.3857449Z Site: freelance-salary-api stopped.
+2026-04-16T15:07:40.4739776Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:05:43 (UTC), DetailsLevel: ERR
+2026-04-16T15:07:40.9717694Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:05:43 (UTC), DetailsLevel: ERR
+2026-04-16T15:07:40.9719170Z Container start method called.
+2026-04-16T15:07:40.9719777Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:07:40.9721136Z Establishing network.
+2026-04-16T15:07:40.9722556Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:07:41.1396748Z Container is starting.
+2026-04-16T15:07:41.1398487Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:07:41.1399979Z Establishing user namespace if not established already.
+2026-04-16T15:07:41.1402710Z Establishing network if not established already.
+2026-04-16T15:07:41.1404525Z Mounting volumes.
+2026-04-16T15:07:41.1407688Z Nested mountpoint 
+2026-04-16T15:07:41.1479519Z Nested mountpoint volatile/logs
+2026-04-16T15:07:41.1547650Z Nested mountpoint 
+2026-04-16T15:07:41.1576632Z Nested mountpoint 
+2026-04-16T15:07:41.1663478Z Nested mountpoint 
+2026-04-16T15:07:41.2759196Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:07:41.2760812Z Creating container.
+2026-04-16T15:07:41.2762740Z Creating pipes for streaming container io.
+2026-04-16T15:07:41.2763968Z Creating stdout named pipe at /podr/container/pipe/ac106db20599_freelance-salary-api/stdout_07ff53717689436cb5bcecffd407e7ae.
+2026-04-16T15:07:41.2765910Z Successfully created stdout named pipe at: /podr/container/pipe/ac106db20599_freelance-salary-api/stdout_07ff53717689436cb5bcecffd407e7ae.
+2026-04-16T15:07:41.2766588Z Opening named pipe /podr/container/pipe/ac106db20599_freelance-salary-api/stdout_07ff53717689436cb5bcecffd407e7ae for reading in non-blocking mode.
+2026-04-16T15:07:41.2767433Z Successfully opened named pipe: /podr/container/pipe/ac106db20599_freelance-salary-api/stdout_07ff53717689436cb5bcecffd407e7ae.
+2026-04-16T15:07:41.2768149Z Successfully removed non-blocking flag from /podr/container/pipe/ac106db20599_freelance-salary-api/stdout_07ff53717689436cb5bcecffd407e7ae.
+2026-04-16T15:07:41.2801834Z Creating stderr named pipe at /podr/container/pipe/ac106db20599_freelance-salary-api/stderr_9ae0b598d14048b1a485f697322b0ae8.
+2026-04-16T15:07:41.2810503Z Successfully created stderr named pipe at: /podr/container/pipe/ac106db20599_freelance-salary-api/stderr_9ae0b598d14048b1a485f697322b0ae8.
+2026-04-16T15:07:41.2811545Z Opening named pipe /podr/container/pipe/ac106db20599_freelance-salary-api/stderr_9ae0b598d14048b1a485f697322b0ae8 for reading in non-blocking mode.
+2026-04-16T15:07:41.2813568Z Successfully opened named pipe: /podr/container/pipe/ac106db20599_freelance-salary-api/stderr_9ae0b598d14048b1a485f697322b0ae8.
+2026-04-16T15:07:41.2814761Z Successfully removed non-blocking flag from /podr/container/pipe/ac106db20599_freelance-salary-api/stderr_9ae0b598d14048b1a485f697322b0ae8.
+2026-04-16T15:07:41.2856144Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:07:41.5370722Z Starting container: ac106db20599_freelance-salary-api.
+2026-04-16T15:07:41.5594945Z Starting watchers and probes.
+2026-04-16T15:07:41.5657947Z Starting metrics collection.
+2026-04-16T15:07:41.5660015Z Container is running.
+2026-04-16T15:07:41.5664004Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:07:41.6253055Z Container start method finished after 642 ms.
+2026-04-16T15:07:41.6318179Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:07:41.6325091Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:08:03.8614519Z Container has finished running with exit code: 3.
+2026-04-16T15:08:03.8631891Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:08:03.8638589Z Stop and delete container. Retry count = 0
+2026-04-16T15:08:03.8640134Z Stopping container: ac106db20599_freelance-salary-api.
+2026-04-16T15:08:03.9162882Z Deleting container: ac106db20599_freelance-salary-api. Retry count = 0
+2026-04-16T15:08:04.8430452Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:08:04.8436758Z Container is terminated. Total time elapsed: 979 ms.
+2026-04-16T15:08:04.8446734Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:08:04.8494086Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:05:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:04.8551334Z Site startup probe failed after 23.2210884 seconds.
+2026-04-16T15:08:04.9528679Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:04.9641705Z Failed to start site. Revert by stopping site.
+2026-04-16T15:08:04.9666383Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:04.9670859Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:04.9671071Z Site: freelance-salary-api stopped.
+2026-04-16T15:08:04.9764633Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:05.1987733Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:08:05.4133853Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:08:05 (UTC), DetailsLevel: ERR
+2026-04-16T15:08:05.4483697Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:08:05 (UTC), DetailsLevel: ERR
+2026-04-16T15:08:45.2187477Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:08:05 (UTC), DetailsLevel: ERR
+2026-04-16T15:08:45.9146782Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:08:05 (UTC), DetailsLevel: ERR
+2026-04-16T15:08:45.9149367Z Container start method called.
+2026-04-16T15:08:45.9149995Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:08:45.9151290Z Establishing network.
+2026-04-16T15:08:45.9156656Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:08:46.1367555Z Container is starting.
+2026-04-16T15:08:46.1369550Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:08:46.1454244Z Establishing user namespace if not established already.
+2026-04-16T15:08:46.1458794Z Establishing network if not established already.
+2026-04-16T15:08:46.1460294Z Mounting volumes.
+2026-04-16T15:08:46.1463048Z Nested mountpoint 
+2026-04-16T15:08:46.1506123Z Nested mountpoint volatile/logs
+2026-04-16T15:08:46.1635409Z Nested mountpoint 
+2026-04-16T15:08:46.1870270Z Nested mountpoint 
+2026-04-16T15:08:46.1978548Z Nested mountpoint 
+2026-04-16T15:08:46.4317207Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:08:46.4318492Z Creating container.
+2026-04-16T15:08:46.4319761Z Creating pipes for streaming container io.
+2026-04-16T15:08:46.4320823Z Creating stdout named pipe at /podr/container/pipe/67429ad5892c_freelance-salary-api/stdout_1365ef317ac04a23865f30ab1215edb9.
+2026-04-16T15:08:46.4322907Z Successfully created stdout named pipe at: /podr/container/pipe/67429ad5892c_freelance-salary-api/stdout_1365ef317ac04a23865f30ab1215edb9.
+2026-04-16T15:08:46.4324094Z Opening named pipe /podr/container/pipe/67429ad5892c_freelance-salary-api/stdout_1365ef317ac04a23865f30ab1215edb9 for reading in non-blocking mode.
+2026-04-16T15:08:46.4325396Z Successfully opened named pipe: /podr/container/pipe/67429ad5892c_freelance-salary-api/stdout_1365ef317ac04a23865f30ab1215edb9.
+2026-04-16T15:08:46.4326473Z Successfully removed non-blocking flag from /podr/container/pipe/67429ad5892c_freelance-salary-api/stdout_1365ef317ac04a23865f30ab1215edb9.
+2026-04-16T15:08:46.4344063Z Creating stderr named pipe at /podr/container/pipe/67429ad5892c_freelance-salary-api/stderr_db4832f9f9e14930833e08168810c955.
+2026-04-16T15:08:46.4345763Z Successfully created stderr named pipe at: /podr/container/pipe/67429ad5892c_freelance-salary-api/stderr_db4832f9f9e14930833e08168810c955.
+2026-04-16T15:08:46.4346920Z Opening named pipe /podr/container/pipe/67429ad5892c_freelance-salary-api/stderr_db4832f9f9e14930833e08168810c955 for reading in non-blocking mode.
+2026-04-16T15:08:46.4349319Z Successfully opened named pipe: /podr/container/pipe/67429ad5892c_freelance-salary-api/stderr_db4832f9f9e14930833e08168810c955.
+2026-04-16T15:08:46.4350477Z Successfully removed non-blocking flag from /podr/container/pipe/67429ad5892c_freelance-salary-api/stderr_db4832f9f9e14930833e08168810c955.
+2026-04-16T15:08:46.4361036Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:08:46.6957893Z Starting container: 67429ad5892c_freelance-salary-api.
+2026-04-16T15:08:46.7160402Z Starting watchers and probes.
+2026-04-16T15:08:46.7164646Z Starting metrics collection.
+2026-04-16T15:08:46.7188541Z Container is running.
+2026-04-16T15:08:46.7189577Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:08:46.7506656Z Container start method finished after 835 ms.
+2026-04-16T15:08:46.7521909Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:08:46.7522460Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:09:03.5076110Z Container has finished running with exit code: 3.
+2026-04-16T15:09:03.5077899Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:09:03.5086817Z Stop and delete container. Retry count = 0
+2026-04-16T15:09:03.5088089Z Stopping container: 67429ad5892c_freelance-salary-api.
+2026-04-16T15:09:03.5445484Z Deleting container: 67429ad5892c_freelance-salary-api. Retry count = 0
+2026-04-16T15:09:04.3180523Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:09:04.3182445Z Container is terminated. Total time elapsed: 810 ms.
+2026-04-16T15:09:04.3183701Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:09:04.3184802Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:08:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.3196517Z Site startup probe failed after 17.5665578 seconds.
+2026-04-16T15:09:04.3687975Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.3726876Z Failed to start site. Revert by stopping site.
+2026-04-16T15:09:04.3727939Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.3730112Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.3730255Z Site: freelance-salary-api stopped.
+2026-04-16T15:09:04.3780223Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.6802980Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:09:04.8841254Z Site: freelance-salary-api will be blocked for 1 minutes till 04/16/2026 15:10:04
+2026-04-16T15:09:04.8842526Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: freelance-salary-api will be blocked for 1 minutes till 04/16/2026 15:10:04, DetailsLevel: WARN
+2026-04-16T15:09:04.8862580Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:09:04 (UTC), DetailsLevel: WARN
+2026-04-16T15:09:04.9120778Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:09:04 (UTC), DetailsLevel: WARN
+2026-04-16T15:10:04.8830557Z Site: freelance-salary-api is unblocked.
+2026-04-16T15:10:49.2747420Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:09:04 (UTC), DetailsLevel: WARN
+2026-04-16T15:10:50.0521819Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:09:04 (UTC), DetailsLevel: WARN
+2026-04-16T15:10:50.0576717Z Container start method called.
+2026-04-16T15:10:50.0579553Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:10:50.0581172Z Establishing network.
+2026-04-16T15:10:50.0587348Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:10:50.2891879Z Container is starting.
+2026-04-16T15:10:50.2894536Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:10:50.2897555Z Establishing user namespace if not established already.
+2026-04-16T15:10:50.2899090Z Establishing network if not established already.
+2026-04-16T15:10:50.2900931Z Mounting volumes.
+2026-04-16T15:10:50.3110916Z Nested mountpoint 
+2026-04-16T15:10:50.3216386Z Nested mountpoint volatile/logs
+2026-04-16T15:10:50.3430805Z Nested mountpoint 
+2026-04-16T15:10:50.3469266Z Nested mountpoint 
+2026-04-16T15:10:50.4999588Z Nested mountpoint 
+2026-04-16T15:10:50.9817892Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:10:50.9819278Z Creating container.
+2026-04-16T15:10:50.9843511Z Creating pipes for streaming container io.
+2026-04-16T15:10:50.9880965Z Creating stdout named pipe at /podr/container/pipe/330dc29b32be_freelance-salary-api/stdout_a04fe7de7e794a409e6f321de8dbf1b4.
+2026-04-16T15:10:50.9924652Z Successfully created stdout named pipe at: /podr/container/pipe/330dc29b32be_freelance-salary-api/stdout_a04fe7de7e794a409e6f321de8dbf1b4.
+2026-04-16T15:10:50.9927155Z Opening named pipe /podr/container/pipe/330dc29b32be_freelance-salary-api/stdout_a04fe7de7e794a409e6f321de8dbf1b4 for reading in non-blocking mode.
+2026-04-16T15:10:50.9930973Z Successfully opened named pipe: /podr/container/pipe/330dc29b32be_freelance-salary-api/stdout_a04fe7de7e794a409e6f321de8dbf1b4.
+2026-04-16T15:10:50.9934952Z Successfully removed non-blocking flag from /podr/container/pipe/330dc29b32be_freelance-salary-api/stdout_a04fe7de7e794a409e6f321de8dbf1b4.
+2026-04-16T15:10:50.9939754Z Creating stderr named pipe at /podr/container/pipe/330dc29b32be_freelance-salary-api/stderr_b228324d1c26445f86e0851d482decaa.
+2026-04-16T15:10:50.9983497Z Successfully created stderr named pipe at: /podr/container/pipe/330dc29b32be_freelance-salary-api/stderr_b228324d1c26445f86e0851d482decaa.
+2026-04-16T15:10:50.9986325Z Opening named pipe /podr/container/pipe/330dc29b32be_freelance-salary-api/stderr_b228324d1c26445f86e0851d482decaa for reading in non-blocking mode.
+2026-04-16T15:10:50.9987903Z Successfully opened named pipe: /podr/container/pipe/330dc29b32be_freelance-salary-api/stderr_b228324d1c26445f86e0851d482decaa.
+2026-04-16T15:10:50.9989123Z Successfully removed non-blocking flag from /podr/container/pipe/330dc29b32be_freelance-salary-api/stderr_b228324d1c26445f86e0851d482decaa.
+2026-04-16T15:10:50.9993608Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:10:51.6455583Z Starting container: 330dc29b32be_freelance-salary-api.
+2026-04-16T15:10:51.6828614Z Starting watchers and probes.
+2026-04-16T15:10:51.6831080Z Starting metrics collection.
+2026-04-16T15:10:51.6834472Z Container is running.
+2026-04-16T15:10:51.6884620Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:10:51.7152920Z Container start method finished after 1656 ms.
+2026-04-16T15:10:51.7156640Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:10:51.7156934Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:11:22.6832177Z Container has finished running with exit code: 3.
+2026-04-16T15:11:22.6838893Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:11:22.6896917Z Stop and delete container. Retry count = 0
+2026-04-16T15:11:22.6911759Z Stopping container: 330dc29b32be_freelance-salary-api.
+2026-04-16T15:11:22.8023491Z Deleting container: 330dc29b32be_freelance-salary-api. Retry count = 0
+2026-04-16T15:11:25.4338439Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:11:25.4341007Z Container is terminated. Total time elapsed: 2749 ms.
+2026-04-16T15:11:25.4342293Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:11:25.4357909Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:09:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.4374528Z Site startup probe failed after 33.7213539 seconds.
+2026-04-16T15:11:25.5119314Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.5154664Z Failed to start site. Revert by stopping site.
+2026-04-16T15:11:25.5264943Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.5271489Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.5272128Z Site: freelance-salary-api stopped.
+2026-04-16T15:11:25.5356869Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.8069505Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:11:25.9280866Z Site: freelance-salary-api will be blocked for 1 minutes till 04/16/2026 15:12:25
+2026-04-16T15:11:25.9285252Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: freelance-salary-api will be blocked for 1 minutes till 04/16/2026 15:12:25, DetailsLevel: WARN
+2026-04-16T15:11:25.9288390Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:11:25 (UTC), DetailsLevel: WARN
+2026-04-16T15:11:26.0189558Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:11:25 (UTC), DetailsLevel: WARN
+2026-04-16T15:12:25.9320063Z Site: freelance-salary-api is unblocked.
+2026-04-16T15:20:21.3384333Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:11:25 (UTC), DetailsLevel: WARN
+2026-04-16T15:20:21.9323694Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:11:25 (UTC), DetailsLevel: WARN
+2026-04-16T15:20:21.9325096Z Container start method called.
+2026-04-16T15:20:21.9325583Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:20:21.9326654Z Establishing network.
+2026-04-16T15:20:21.9327813Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:20:22.1060480Z Container is starting.
+2026-04-16T15:20:22.1061277Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:20:22.1062461Z Establishing user namespace if not established already.
+2026-04-16T15:20:22.1063753Z Establishing network if not established already.
+2026-04-16T15:20:22.1065214Z Mounting volumes.
+2026-04-16T15:20:22.1066840Z Nested mountpoint 
+2026-04-16T15:20:22.1148741Z Nested mountpoint volatile/logs
+2026-04-16T15:20:22.1222483Z Nested mountpoint 
+2026-04-16T15:20:22.1230955Z Nested mountpoint 
+2026-04-16T15:20:22.1237030Z Nested mountpoint 
+2026-04-16T15:20:22.2170977Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:20:22.2175611Z Creating container.
+2026-04-16T15:20:22.2176994Z Creating pipes for streaming container io.
+2026-04-16T15:20:22.2178344Z Creating stdout named pipe at /podr/container/pipe/4c71f376afd0_freelance-salary-api/stdout_22dffa27a921481eba737ee552f03394.
+2026-04-16T15:20:22.2181653Z Successfully created stdout named pipe at: /podr/container/pipe/4c71f376afd0_freelance-salary-api/stdout_22dffa27a921481eba737ee552f03394.
+2026-04-16T15:20:22.2183027Z Opening named pipe /podr/container/pipe/4c71f376afd0_freelance-salary-api/stdout_22dffa27a921481eba737ee552f03394 for reading in non-blocking mode.
+2026-04-16T15:20:22.2184514Z Successfully opened named pipe: /podr/container/pipe/4c71f376afd0_freelance-salary-api/stdout_22dffa27a921481eba737ee552f03394.
+2026-04-16T15:20:22.2185735Z Successfully removed non-blocking flag from /podr/container/pipe/4c71f376afd0_freelance-salary-api/stdout_22dffa27a921481eba737ee552f03394.
+2026-04-16T15:20:22.2187321Z Creating stderr named pipe at /podr/container/pipe/4c71f376afd0_freelance-salary-api/stderr_e3d25043b3214ed9a8bd4121d224f57c.
+2026-04-16T15:20:22.2189061Z Successfully created stderr named pipe at: /podr/container/pipe/4c71f376afd0_freelance-salary-api/stderr_e3d25043b3214ed9a8bd4121d224f57c.
+2026-04-16T15:20:22.2190163Z Opening named pipe /podr/container/pipe/4c71f376afd0_freelance-salary-api/stderr_e3d25043b3214ed9a8bd4121d224f57c for reading in non-blocking mode.
+2026-04-16T15:20:22.2191495Z Successfully opened named pipe: /podr/container/pipe/4c71f376afd0_freelance-salary-api/stderr_e3d25043b3214ed9a8bd4121d224f57c.
+2026-04-16T15:20:22.2192539Z Successfully removed non-blocking flag from /podr/container/pipe/4c71f376afd0_freelance-salary-api/stderr_e3d25043b3214ed9a8bd4121d224f57c.
+2026-04-16T15:20:22.2194171Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:20:22.3924044Z Starting container: 4c71f376afd0_freelance-salary-api.
+2026-04-16T15:20:22.4134570Z Starting watchers and probes.
+2026-04-16T15:20:22.4139060Z Starting metrics collection.
+2026-04-16T15:20:22.4167487Z Container is running.
+2026-04-16T15:20:22.4169688Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:20:22.4375368Z Container start method finished after 504 ms.
+2026-04-16T15:20:22.4377260Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:20:22.4377679Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:20:40.9955492Z Container has finished running with exit code: 3.
+2026-04-16T15:20:40.9957616Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:20:41.0140850Z Stop and delete container. Retry count = 0
+2026-04-16T15:20:41.0142535Z Stopping container: 4c71f376afd0_freelance-salary-api.
+2026-04-16T15:20:41.1446001Z Deleting container: 4c71f376afd0_freelance-salary-api. Retry count = 0
+2026-04-16T15:20:42.5772803Z Container get mounts received unexpected exception.
+2026-04-16T15:20:42.5867824Z Container get processes received unexpected exception.
+2026-04-16T15:20:42.8061206Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:20:42.8121695Z Container is terminated. Total time elapsed: 1799 ms.
+2026-04-16T15:20:42.8123258Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:20:42.8193192Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:11:25, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:42.8429272Z Site startup probe failed after 20.4047763 seconds.
+2026-04-16T15:20:42.8986334Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:42.9151273Z Failed to start site. Revert by stopping site.
+2026-04-16T15:20:42.9152911Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:42.9155777Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:42.9155937Z Site: freelance-salary-api stopped.
+2026-04-16T15:20:42.9223136Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:43.1695721Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:20:43.2497042Z Site: freelance-salary-api will be blocked for 2 minutes till 04/16/2026 15:22:43
+2026-04-16T15:20:43.2503486Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: freelance-salary-api will be blocked for 2 minutes till 04/16/2026 15:22:43, DetailsLevel: WARN
+2026-04-16T15:20:43.2512895Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:20:43 (UTC), DetailsLevel: WARN
+2026-04-16T15:20:43.2846158Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 04/16/2026 15:20:43 (UTC), DetailsLevel: WARN
+2026-04-16T15:22:02.8383311Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/16/2026 15:22:43, DetailsLevel: WARN
+2026-04-16T15:22:02.8389315Z Start site prohibitted because the site is being blocked.
+2026-04-16T15:22:43.2510566Z Site: freelance-salary-api is unblocked.
+2026-04-16T15:34:00.1292902Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/16/2026 15:22:43, DetailsLevel: WARN
+2026-04-16T15:34:00.8149624Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/16/2026 15:22:43, DetailsLevel: WARN
+2026-04-16T15:34:00.8253813Z Container start method called.
+2026-04-16T15:34:00.8255434Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:34:00.8258418Z Establishing network.
+2026-04-16T15:34:00.8264511Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:34:01.0828258Z Container is starting.
+2026-04-16T15:34:01.0829221Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:34:01.0830451Z Establishing user namespace if not established already.
+2026-04-16T15:34:01.0831758Z Establishing network if not established already.
+2026-04-16T15:34:01.0833000Z Mounting volumes.
+2026-04-16T15:34:01.0834663Z Nested mountpoint 
+2026-04-16T15:34:01.0880626Z Nested mountpoint volatile/logs
+2026-04-16T15:34:01.0937223Z Nested mountpoint 
+2026-04-16T15:34:01.0945508Z Nested mountpoint 
+2026-04-16T15:34:01.0955064Z Nested mountpoint 
+2026-04-16T15:34:01.2137859Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:34:01.2143090Z Creating container.
+2026-04-16T15:34:01.2144374Z Creating pipes for streaming container io.
+2026-04-16T15:34:01.2145822Z Creating stdout named pipe at /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stdout_ef53063f609c409b8fbf2e2e00ea8ce9.
+2026-04-16T15:34:01.2157997Z Successfully created stdout named pipe at: /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stdout_ef53063f609c409b8fbf2e2e00ea8ce9.
+2026-04-16T15:34:01.2159606Z Opening named pipe /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stdout_ef53063f609c409b8fbf2e2e00ea8ce9 for reading in non-blocking mode.
+2026-04-16T15:34:01.2171564Z Successfully opened named pipe: /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stdout_ef53063f609c409b8fbf2e2e00ea8ce9.
+2026-04-16T15:34:01.2173928Z Successfully removed non-blocking flag from /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stdout_ef53063f609c409b8fbf2e2e00ea8ce9.
+2026-04-16T15:34:01.2175865Z Creating stderr named pipe at /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stderr_e48c548f345d4862b8f0214e46ac2d5c.
+2026-04-16T15:34:01.2177546Z Successfully created stderr named pipe at: /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stderr_e48c548f345d4862b8f0214e46ac2d5c.
+2026-04-16T15:34:01.2178714Z Opening named pipe /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stderr_e48c548f345d4862b8f0214e46ac2d5c for reading in non-blocking mode.
+2026-04-16T15:34:01.2180011Z Successfully opened named pipe: /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stderr_e48c548f345d4862b8f0214e46ac2d5c.
+2026-04-16T15:34:01.2181083Z Successfully removed non-blocking flag from /podr/container/pipe/d4b0e1733b70_freelance-salary-api/stderr_e48c548f345d4862b8f0214e46ac2d5c.
+2026-04-16T15:34:01.2182737Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:34:01.5846633Z Starting container: d4b0e1733b70_freelance-salary-api.
+2026-04-16T15:34:01.6286152Z Starting watchers and probes.
+2026-04-16T15:34:01.6298340Z Starting metrics collection.
+2026-04-16T15:34:01.6309251Z Container is running.
+2026-04-16T15:34:01.6312753Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:34:01.6567264Z Container start method finished after 830 ms.
+2026-04-16T15:34:01.6573668Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:34:01.6576075Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:34:16.4592509Z Container has finished running with exit code: 3.
+2026-04-16T15:34:16.4594352Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:34:16.4905989Z Stop and delete container. Retry count = 0
+2026-04-16T15:34:16.4907678Z Stopping container: d4b0e1733b70_freelance-salary-api.
+2026-04-16T15:34:16.5871678Z Deleting container: d4b0e1733b70_freelance-salary-api. Retry count = 0
+2026-04-16T15:34:17.1253742Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:34:17.1272497Z Container is terminated. Total time elapsed: 664 ms.
+2026-04-16T15:34:17.1274317Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:34:17.1302419Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:20:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:34:17.1406470Z Site startup probe failed after 15.481394 seconds.
+2026-04-16T15:34:17.2000697Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:34:17.2167094Z Failed to start site. Revert by stopping site.
+2026-04-16T15:34:17.2175196Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:34:17.2177943Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:34:17.2178087Z Site: freelance-salary-api stopped.
+2026-04-16T15:36:42.1569738Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/16/2026 15:36:17, DetailsLevel: WARN
+2026-04-16T15:36:42.5704923Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 04/16/2026 15:36:17, DetailsLevel: WARN
+2026-04-16T15:36:42.5706608Z Container start method called.
+2026-04-16T15:36:42.5707404Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:36:42.5709646Z Establishing network.
+2026-04-16T15:36:42.5711320Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-04-16T15:36:42.7580673Z Container is starting.
+2026-04-16T15:36:42.7582416Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for freelance-salary-api., DetailsLevel: INFO
+2026-04-16T15:36:42.7584941Z Establishing user namespace if not established already.
+2026-04-16T15:36:42.7586989Z Establishing network if not established already.
+2026-04-16T15:36:42.7588417Z Mounting volumes.
+2026-04-16T15:36:42.7590440Z Nested mountpoint 
+2026-04-16T15:36:42.7636719Z Nested mountpoint volatile/logs
+2026-04-16T15:36:42.7791519Z Nested mountpoint 
+2026-04-16T15:36:42.7799503Z Nested mountpoint 
+2026-04-16T15:36:42.7841507Z Nested mountpoint 
+2026-04-16T15:36:42.8649532Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for freelance-salary-api. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-04-16T15:36:42.8651102Z Creating container.
+2026-04-16T15:36:42.8674003Z Creating pipes for streaming container io.
+2026-04-16T15:36:42.8677211Z Creating stdout named pipe at /podr/container/pipe/938b06e48acc_freelance-salary-api/stdout_4e468962c0544d4bba203f23e8b15ba7.
+2026-04-16T15:36:42.8687760Z Successfully created stdout named pipe at: /podr/container/pipe/938b06e48acc_freelance-salary-api/stdout_4e468962c0544d4bba203f23e8b15ba7.
+2026-04-16T15:36:42.8691210Z Opening named pipe /podr/container/pipe/938b06e48acc_freelance-salary-api/stdout_4e468962c0544d4bba203f23e8b15ba7 for reading in non-blocking mode.
+2026-04-16T15:36:42.8704864Z Successfully opened named pipe: /podr/container/pipe/938b06e48acc_freelance-salary-api/stdout_4e468962c0544d4bba203f23e8b15ba7.
+2026-04-16T15:36:42.8708386Z Successfully removed non-blocking flag from /podr/container/pipe/938b06e48acc_freelance-salary-api/stdout_4e468962c0544d4bba203f23e8b15ba7.
+2026-04-16T15:36:42.8714836Z Creating stderr named pipe at /podr/container/pipe/938b06e48acc_freelance-salary-api/stderr_e583e7782cf44198913eaf55b233765f.
+2026-04-16T15:36:42.8716910Z Successfully created stderr named pipe at: /podr/container/pipe/938b06e48acc_freelance-salary-api/stderr_e583e7782cf44198913eaf55b233765f.
+2026-04-16T15:36:42.8718235Z Opening named pipe /podr/container/pipe/938b06e48acc_freelance-salary-api/stderr_e583e7782cf44198913eaf55b233765f for reading in non-blocking mode.
+2026-04-16T15:36:42.8719420Z Successfully opened named pipe: /podr/container/pipe/938b06e48acc_freelance-salary-api/stderr_e583e7782cf44198913eaf55b233765f.
+2026-04-16T15:36:42.8738901Z Successfully removed non-blocking flag from /podr/container/pipe/938b06e48acc_freelance-salary-api/stderr_e583e7782cf44198913eaf55b233765f.
+2026-04-16T15:36:42.8741784Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-04-16T15:36:43.1640590Z Starting container: 938b06e48acc_freelance-salary-api.
+2026-04-16T15:36:43.1968594Z Starting watchers and probes.
+2026-04-16T15:36:43.1987864Z Starting metrics collection.
+2026-04-16T15:36:43.1990758Z Container is running.
+2026-04-16T15:36:43.1991646Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:36:43.2272711Z Container start method finished after 656 ms.
+2026-04-16T15:36:43.2274651Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container freelance-salary-api successfully created and is running., DetailsLevel: INFO
+2026-04-16T15:36:43.2275078Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-04-16T15:37:00.5790370Z Container has finished running with exit code: 3.
+2026-04-16T15:37:00.5794001Z Container is terminating. Grace period: 5 seconds.
+2026-04-16T15:37:00.7841257Z Stop and delete container. Retry count = 0
+2026-04-16T15:37:00.7843022Z Stopping container: 938b06e48acc_freelance-salary-api.
+2026-04-16T15:37:01.1398639Z Deleting container: 938b06e48acc_freelance-salary-api. Retry count = 0
+2026-04-16T15:37:04.1870493Z Container spec TerminationMessagePolicy  path 
+2026-04-16T15:37:04.1874201Z Container is terminated. Total time elapsed: 3607 ms.
+2026-04-16T15:37:04.1875411Z Site container: freelance-salary-api terminated during site startup.
+2026-04-16T15:37:04.1935939Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:34:17, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:37:04.7020240Z Site startup probe failed after 21.4737996 seconds.
+2026-04-16T15:37:04.7995793Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:37:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:37:04.8084963Z Failed to start site. Revert by stopping site.
+2026-04-16T15:37:04.8086461Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:37:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:37:04.8135448Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 04/16/2026 15:37:04, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: freelance-salary-api terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-04-16T15:37:04.8151390Z Site: freelance-salary-api stopped.

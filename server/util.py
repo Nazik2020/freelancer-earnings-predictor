@@ -10,9 +10,16 @@ __model             = None
 
 # Paths relative to this file so Flask works no matter the process working directory
 _SERVER_DIR = os.path.dirname(os.path.abspath(__file__))
-CLEAN_DATASET_PATH = os.path.normpath(
-    os.path.join(_SERVER_DIR, '..', 'dataset', 'df7.csv')
+_DATASET_CANDIDATES = (
+    os.path.join(_SERVER_DIR, '..', 'dataset', 'df7.csv'),
+    os.path.join(_SERVER_DIR, 'dataset', 'df7.csv'),
+    os.path.join(_SERVER_DIR, 'df7.csv'),
 )
+CLEAN_DATASET_PATH = os.path.normpath(_DATASET_CANDIDATES[0])
+for _candidate in _DATASET_CANDIDATES:
+    if os.path.isfile(_candidate):
+        CLEAN_DATASET_PATH = os.path.normpath(_candidate)
+        break
 
 # df7.csv / model feature: int codes 0, 1, 2 == Beginner, Intermediate, Expert (OrdinalEncoder order)
 _EXPERIENCE_CODE_LABELS = ('Beginner', 'Intermediate', 'Expert')
@@ -246,7 +253,7 @@ def load_saved_artifacts():
     global __experience_levels
     global __model
 
-    artifacts_dir = os.path.join(_SERVER_DIR, 'artifacts')
+    artifacts_dir = os.path.join(_SERVER_DIR, 'model_files')
     print(f"Dataset CSV: {CLEAN_DATASET_PATH} (exists: {os.path.isfile(CLEAN_DATASET_PATH)})")
 
     with open(os.path.join(artifacts_dir, 'columns.json'), 'r', encoding='utf-8') as f:

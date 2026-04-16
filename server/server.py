@@ -20,6 +20,16 @@ SERVER_VERSION = "3.0.0-FIXED"
 DEFAULT_PORT = int(os.environ.get("PORT", "5001"))
 
 
+def ensure_artifacts_loaded():
+    """Load model artifacts for both local `python server.py` and Azure gunicorn startup."""
+    if util.get_job_categories() is not None and util.get_experience_levels() is not None:
+        return
+    util.load_saved_artifacts()
+
+
+ensure_artifacts_loaded()
+
+
 @app.after_request
 def prevent_cached_api(response):
     """Avoid stale JSON when fixing bugs (some browsers/proxies cache GET)."""
@@ -40,6 +50,7 @@ def health():
         'version': SERVER_VERSION,
         'port': DEFAULT_PORT,
         'message': 'CORS-hardened server is running',
+        'artifacts_loaded': util.get_job_categories() is not None,
         # If this path is not your Cursor project folder, you are running a different copy of the app.
         'util_py': getattr(util, '__file__', None),
         'dataset_csv': getattr(util, 'CLEAN_DATASET_PATH', None),
@@ -150,5 +161,4 @@ if __name__ == '__main__':
     print('  Open: http://127.0.0.1:%s/health' % DEFAULT_PORT)
     print('=' * 64)
     print()
-    util.load_saved_artifacts()
     app.run(host='127.0.0.1', port=DEFAULT_PORT, debug=False)
