@@ -253,7 +253,7 @@ def load_saved_artifacts():
     global __experience_levels
     global __model
 
-    artifacts_dir = os.path.join(_SERVER_DIR, 'model_files')
+    artifacts_dir = os.path.join(_SERVER_DIR, 'artifacts_1')
     print(f"Dataset CSV: {CLEAN_DATASET_PATH} (exists: {os.path.isfile(CLEAN_DATASET_PATH)})")
 
     with open(os.path.join(artifacts_dir, 'columns.json'), 'r', encoding='utf-8') as f:
