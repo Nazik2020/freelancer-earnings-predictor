@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "route": "/insights", "rewrite": "/insights.html" }
+  ],
+  "navigationFallback": {
+    "document": "/index.html"
+  },
+  "globalHeaders": {
+    "Cache-Control": "no-cache"
+  }
+}
