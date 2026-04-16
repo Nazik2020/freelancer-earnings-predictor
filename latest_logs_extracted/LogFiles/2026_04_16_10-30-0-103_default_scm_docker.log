@@ -1,0 +1,782 @@
+2026-04-16T14:45:24.0288733Z     __ __          __      __    _ __     
+2026-04-16T14:45:24.0573012Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T14:45:24.0573567Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T14:45:24.0573641Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T14:45:24.0573693Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T14:45:24.0573761Z 
+2026-04-16T14:45:24.0573998Z                                           
+2026-04-16T14:45:24.0574056Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T14:45:24.0574098Z 
+2026-04-16T14:45:24.0574144Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T14:45:24.0574195Z Kudu Version : 20260204.5
+2026-04-16T14:45:24.0574245Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T14:45:24.0574290Z Instance Name: 10-30-0-103
+2026-04-16T14:45:24.0574428Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T14:45:24.0574481Z 
+2026-04-16T14:45:25.1386737Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T14:45:25.1419389Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T14:45:26.0032947Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T14:45:26.0698481Z node not running, starting node /opt/webssh/index.js
+2026-04-16T14:45:28.2529155Z Thu Apr 16 14:45:28 UTC 2026 running .net core
+2026-04-16T14:45:28.8906388Z Startup : 02.45.28.876170
+2026-04-16T14:45:28.9316943Z Configure Services : 02.45.28.931477
+2026-04-16T14:45:29.1647880Z Configure : 02.45.29.164531
+2026-04-16T14:45:29.3856734Z Setting Up Routes : 02.45.29.385482
+2026-04-16T14:45:29.3962698Z Exiting Configure : 02.45.29.396093
+2026-04-16T14:45:29.4541464Z warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+2026-04-16T14:45:29.4542152Z       No XML encryptor configured. Key {a110cf14-591b-4f57-9cb8-7155babfc79b} may be persisted to storage in unencrypted form.
+2026-04-16T14:45:29.5729508Z Hosting environment: Production
+2026-04-16T14:45:29.5730359Z Content root path: /opt/Kudu
+2026-04-16T14:45:29.5730521Z Now listening on: http://0.0.0.0:8181
+2026-04-16T14:45:29.5730737Z Application started. Press Ctrl+C to shut down.
+2026-04-16T14:45:34.6200180Z Deploy Async
+2026-04-16T14:45:37.6945582Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-04-16T14:45:37.7135261Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-04-16T14:45:37.7289097Z 
+2026-04-16T14:45:37.7473779Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-04-16T14:45:37.7560789Z 
+2026-04-16T14:45:37.7649349Z Build Operation ID: 6690bd10aab48a91
+2026-04-16T14:45:37.7846100Z Repository Commit : ff603fa6-5024-44f8-8cf4-c73f28430ae3
+2026-04-16T14:45:37.7948041Z OS Type           : bullseye
+2026-04-16T14:45:37.8084057Z Image Type        : githubactions
+2026-04-16T14:45:37.8262056Z 
+2026-04-16T14:45:37.8335675Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-04-16T14:45:37.8424547Z Backup SDK Storage URL: 
+2026-04-16T14:45:37.8506707Z Detecting platforms...
+2026-04-16T14:45:37.8595520Z External SDK provider is enabled.
+2026-04-16T14:45:37.8673543Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:45:38.1478729Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:45:38.4448453Z Successfully requested blob for platform python, blobName defaultVersion.bullseye.txt, available at /var/OryxSdks/python/defaultVersion.bullseye.txt
+2026-04-16T14:45:38.4916342Z Detected following platforms:
+2026-04-16T14:45:38.5048319Z   python: 3.11.15
+2026-04-16T14:45:38.5127795Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:45:42.2448645Z Successfully requested blob for platform python, blobName python-bullseye-3.11.15.tar.gz, available at /var/OryxSdks/python/python-bullseye-3.11.15.tar.gz
+2026-04-16T14:45:42.5871713Z Version '3.11.15' of platform 'python' is not installed. Generating script to install it...
+2026-04-16T14:45:42.7326457Z 
+2026-04-16T14:45:42.8365225Z Using intermediate directory '/tmp/8de9bc6d1fc63ad'.
+2026-04-16T14:45:42.8511205Z 
+2026-04-16T14:45:42.8643196Z Copying files to the intermediate directory...
+2026-04-16T14:45:42.9477918Z Copying files to intermediate directory done in 0 sec(s).
+2026-04-16T14:45:42.9679001Z 
+2026-04-16T14:45:42.9796678Z Source directory     : /tmp/8de9bc6d1fc63ad
+2026-04-16T14:45:42.9891451Z Destination directory: /home/site/wwwroot
+2026-04-16T14:45:43.0094588Z 
+2026-04-16T14:45:43.0296562Z Installing platform...
+2026-04-16T14:45:43.0380689Z 
+2026-04-16T14:45:43.0560952Z Downloading and extracting 'python' version '3.11.15' to '/tmp/oryx/platforms/python/3.11.15'...
+2026-04-16T14:45:43.0718723Z Detected image debian flavor: bullseye.
+2026-04-16T14:45:43.0906096Z Skipping download of python version 3.11.15 as it is available in external sdk provider cache...
+2026-04-16T14:45:43.1010393Z Extracting contents...
+2026-04-16T14:45:51.1041476Z ...
+2026-04-16T14:45:51.1041938Z Successfully extracted python version 3.11.15 from external sdk provider cache...
+2026-04-16T14:45:51.1573617Z 
+2026-04-16T14:45:51.1755435Z image detector file exists, platform is python..
+2026-04-16T14:45:51.2014089Z OS detector file exists, OS is bullseye..
+2026-04-16T14:45:51.2196002Z Platform installation done in 9 sec(s).
+2026-04-16T14:45:51.2406030Z Running build script snippets...
+2026-04-16T14:45:51.2529696Z Python Version: /tmp/oryx/platforms/python/3.11.15/bin/python3.11
+2026-04-16T14:45:51.2789173Z Creating directory for command manifest file if it does not exist
+2026-04-16T14:45:51.2944594Z Removing existing manifest file
+2026-04-16T14:45:51.3331390Z Python Virtual Environment: antenv
+2026-04-16T14:45:51.3424477Z Creating virtual environment...
+2026-04-16T14:45:51.3616135Z Executing: /tmp/oryx/platforms/python/3.11.15/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-04-16T14:45:57.9955974Z ..
+2026-04-16T14:45:57.9958693Z Activating virtual environment...
+2026-04-16T14:45:58.0196625Z Fast build is enabled
+2026-04-16T14:45:58.0380626Z Installing uv...
+2026-04-16T14:45:59.2277781Z Collecting uv
+2026-04-16T14:45:59.2653440Z   Downloading uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-04-16T14:45:59.4409712Z Downloading uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
+2026-04-16T14:46:00.8060770Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.9/24.9 MB 8.9 MB/s eta 0:00:00
+2026-04-16T14:46:00.9330601Z Installing collected packages: uv
+2026-04-16T14:46:02.5177019Z Successfully installed uv-0.11.7
+2026-04-16T14:46:02.9928401Z 
+2026-04-16T14:46:03.0144100Z [notice] A new release of pip is available: 24.0 -> 26.0.1
+2026-04-16T14:46:03.0299981Z [notice] To update, run: pip install --upgrade pip
+2026-04-16T14:46:03.0417588Z Running uv pip install...
+2026-04-16T14:46:28.4954068Z .....................
+2026-04-16T14:46:28.4959625Z Using Python 3.11.15 environment at: antenv
+2026-04-16T14:46:28.5269633Z Resolved 26 packages in 391ms
+2026-04-16T14:46:28.5399166Z Downloading scikit-learn (8.7MiB)
+2026-04-16T14:46:28.5559390Z Downloading pillow (6.8MiB)
+2026-04-16T14:46:28.5821382Z Downloading scipy (33.7MiB)
+2026-04-16T14:46:28.5939339Z Downloading matplotlib (8.3MiB)
+2026-04-16T14:46:28.6148120Z Downloading kiwisolver (1.4MiB)
+2026-04-16T14:46:28.6325003Z Downloading fonttools (4.8MiB)
+2026-04-16T14:46:28.6471232Z Downloading numpy (16.1MiB)
+2026-04-16T14:46:28.6628155Z Downloading pandas (10.7MiB)
+2026-04-16T14:46:28.6785673Z  Downloaded kiwisolver
+2026-04-16T14:46:28.6946513Z  Downloaded fonttools
+2026-04-16T14:46:28.7079934Z  Downloaded pillow
+2026-04-16T14:46:28.7216464Z  Downloaded matplotlib
+2026-04-16T14:46:28.7369497Z  Downloaded scikit-learn
+2026-04-16T14:46:28.7588608Z  Downloaded numpy
+2026-04-16T14:46:28.7759563Z  Downloaded scipy
+2026-04-16T14:46:28.7872660Z  Downloaded pandas
+2026-04-16T14:46:28.8011871Z Prepared 26 packages in 5.05s
+2026-04-16T14:46:28.8174151Z Installed 26 packages in 1.14s
+2026-04-16T14:46:28.8342667Z Bytecode compiled 5483 files in 18.59s
+2026-04-16T14:46:28.8460290Z  + blinker==1.9.0
+2026-04-16T14:46:28.8575474Z  + click==8.3.2
+2026-04-16T14:46:28.8719427Z  + contourpy==1.3.3
+2026-04-16T14:46:28.8918458Z  + cycler==0.12.1
+2026-04-16T14:46:28.9038609Z  + flask==3.1.3
+2026-04-16T14:46:28.9144878Z  + flask-cors==6.0.2
+2026-04-16T14:46:28.9285476Z  + fonttools==4.62.1
+2026-04-16T14:46:28.9420398Z  + gunicorn==25.3.0
+2026-04-16T14:46:28.9531699Z  + itsdangerous==2.2.0
+2026-04-16T14:46:28.9660271Z  + jinja2==3.1.6
+2026-04-16T14:46:28.9773475Z  + joblib==1.5.3
+2026-04-16T14:46:29.0234477Z  + kiwisolver==1.5.0
+2026-04-16T14:46:29.0650861Z  + markupsafe==3.0.3
+2026-04-16T14:46:29.0821245Z  + matplotlib==3.10.8
+2026-04-16T14:46:29.0946472Z  + numpy==2.4.4
+2026-04-16T14:46:29.1095934Z  + packaging==26.1
+2026-04-16T14:46:29.1226672Z  + pandas==3.0.2
+2026-04-16T14:46:29.1435770Z  + pillow==12.2.0
+2026-04-16T14:46:29.1645641Z  + pyparsing==3.3.2
+2026-04-16T14:46:29.2165964Z  + python-dateutil==2.9.0.post0
+2026-04-16T14:46:29.2490489Z  + scikit-learn==1.8.0
+2026-04-16T14:46:29.2661371Z  + scipy==1.17.1
+2026-04-16T14:46:29.2895503Z  + seaborn==0.13.2
+2026-04-16T14:46:29.3025823Z  + six==1.17.0
+2026-04-16T14:46:29.3329866Z  + threadpoolctl==3.6.0
+2026-04-16T14:46:29.3442934Z  + werkzeug==3.1.8
+2026-04-16T14:46:29.3540787Z uv pip install done in 30 sec(s).
+2026-04-16T14:46:29.3697601Z Not a vso image, so not writing build commands
+2026-04-16T14:46:29.3886721Z Build script snippets done in 37 sec(s).
+2026-04-16T14:46:29.4059965Z Preparing output...
+2026-04-16T14:46:29.4175070Z Compressing source directory directly to destination (optimized path)...
+2026-04-16T14:46:29.4333794Z Using zstd for compression
+2026-04-16T14:46:48.9121878Z ...............
+2026-04-16T14:46:48.9122243Z Copied the compressed output to '/home/site/wwwroot'
+2026-04-16T14:46:48.9457551Z Direct compression with zstd done in 20 sec(s).
+2026-04-16T14:46:48.9582483Z 
+2026-04-16T14:46:48.9708961Z Removing existing manifest file
+2026-04-16T14:46:48.9795294Z Creating a manifest file...
+2026-04-16T14:46:48.9999578Z Manifest file created.
+2026-04-16T14:46:49.0143469Z Copying .ostype to manifest output directory.
+2026-04-16T14:46:49.0330806Z 
+2026-04-16T14:46:49.0434913Z Total execution done in 67 sec(s).
+2026-04-16T14:49:04.0647596Z     __ __          __      __    _ __     
+2026-04-16T14:49:04.0653037Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T14:49:04.0653116Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T14:49:04.0653149Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T14:49:04.0653175Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T14:49:04.0653205Z 
+2026-04-16T14:49:04.0653275Z                                           
+2026-04-16T14:49:04.0653302Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T14:49:04.0653326Z 
+2026-04-16T14:49:04.0653352Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T14:49:04.0653379Z Kudu Version : 20260204.5
+2026-04-16T14:49:04.0653406Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T14:49:04.0653433Z Instance Name: 10-30-0-103
+2026-04-16T14:49:04.0653482Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T14:49:04.0653509Z 
+2026-04-16T14:49:05.7078749Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T14:49:05.7145105Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T14:49:06.9165983Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T14:49:06.9919051Z node not running, starting node /opt/webssh/index.js
+2026-04-16T14:49:12.6038742Z Thu Apr 16 14:49:12 UTC 2026 running .net core
+2026-04-16T14:49:14.2319829Z Startup : 02.49.14.215630
+2026-04-16T14:49:14.2771732Z Configure Services : 02.49.14.276849
+2026-04-16T14:49:14.7322371Z Configure : 02.49.14.732026
+2026-04-16T14:49:15.2977381Z Setting Up Routes : 02.49.15.297557
+2026-04-16T14:49:15.3196537Z Exiting Configure : 02.49.15.319553
+2026-04-16T14:49:15.5620704Z Hosting environment: Production
+2026-04-16T14:49:15.5621282Z Content root path: /opt/Kudu
+2026-04-16T14:49:15.5624430Z Now listening on: http://0.0.0.0:8181
+2026-04-16T14:49:15.5624542Z Application started. Press Ctrl+C to shut down.
+2026-04-16T14:51:28.8606230Z Deploy Async
+2026-04-16T14:51:32.1606189Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-04-16T14:51:32.1801058Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-04-16T14:51:32.1956720Z 
+2026-04-16T14:51:32.2221822Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-04-16T14:51:32.2333069Z 
+2026-04-16T14:51:32.2563218Z Build Operation ID: 0d5b0bc839a1065d
+2026-04-16T14:51:32.2734160Z Repository Commit : 28ae1e7e-3074-43ad-baff-1c6ae6878dfc
+2026-04-16T14:51:32.2865583Z OS Type           : bullseye
+2026-04-16T14:51:32.3017896Z Image Type        : githubactions
+2026-04-16T14:51:32.3209082Z 
+2026-04-16T14:51:32.3359150Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-04-16T14:51:32.3444016Z Backup SDK Storage URL: 
+2026-04-16T14:51:32.3606627Z Detecting platforms...
+2026-04-16T14:51:32.3787401Z External SDK provider is enabled.
+2026-04-16T14:51:32.3920022Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:51:33.2217974Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:51:33.5722077Z Detected following platforms:
+2026-04-16T14:51:33.5851198Z   python: 3.11.15
+2026-04-16T14:51:33.5986580Z Requesting metadata for platform python from external SDK provider
+2026-04-16T14:51:34.4407857Z Version '3.11.15' of platform 'python' is not installed. Generating script to install it...
+2026-04-16T14:51:35.1648194Z 
+2026-04-16T14:51:35.2922455Z Using intermediate directory '/tmp/8de9bc7a5258a55'.
+2026-04-16T14:51:35.3026674Z 
+2026-04-16T14:51:35.3134646Z Copying files to the intermediate directory...
+2026-04-16T14:51:35.3857488Z Copying files to intermediate directory done in 0 sec(s).
+2026-04-16T14:51:35.3980351Z 
+2026-04-16T14:51:35.4123696Z Source directory     : /tmp/8de9bc7a5258a55
+2026-04-16T14:51:35.4323661Z Destination directory: /home/site/wwwroot
+2026-04-16T14:51:35.4491993Z 
+2026-04-16T14:51:35.4736771Z Installing platform...
+2026-04-16T14:51:35.4901678Z 
+2026-04-16T14:51:35.5135139Z Downloading and extracting 'python' version '3.11.15' to '/tmp/oryx/platforms/python/3.11.15'...
+2026-04-16T14:51:35.5382778Z Detected image debian flavor: bullseye.
+2026-04-16T14:51:35.5674936Z Skipping download of python version 3.11.15 as it is available in external sdk provider cache...
+2026-04-16T14:51:35.5798051Z Extracting contents...
+2026-04-16T14:51:45.1156386Z .....
+2026-04-16T14:51:45.1156670Z Successfully extracted python version 3.11.15 from external sdk provider cache...
+2026-04-16T14:51:45.1403913Z 
+2026-04-16T14:51:45.1798249Z image detector file exists, platform is python..
+2026-04-16T14:51:45.1942343Z OS detector file exists, OS is bullseye..
+2026-04-16T14:51:45.2056067Z Platform installation done in 10 sec(s).
+2026-04-16T14:51:45.4135472Z Running build script snippets...
+2026-04-16T14:51:45.4253271Z Python Version: /tmp/oryx/platforms/python/3.11.15/bin/python3.11
+2026-04-16T14:51:45.4433426Z Creating directory for command manifest file if it does not exist
+2026-04-16T14:51:45.4589419Z Removing existing manifest file
+2026-04-16T14:51:45.5190992Z Python Virtual Environment: antenv
+2026-04-16T14:51:45.5315407Z Creating virtual environment...
+2026-04-16T14:51:45.5456252Z Executing: /tmp/oryx/platforms/python/3.11.15/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-04-16T14:51:51.1526187Z .
+2026-04-16T14:51:51.1527243Z Activating virtual environment...
+2026-04-16T14:51:51.1771772Z Fast build is enabled
+2026-04-16T14:51:51.1981349Z Installing uv...
+2026-04-16T14:51:52.0547948Z Collecting uv
+2026-04-16T14:51:52.0829543Z   Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-04-16T14:51:52.1147071Z Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
+2026-04-16T14:51:52.3214720Z Installing collected packages: uv
+2026-04-16T14:51:52.9832793Z Successfully installed uv-0.11.7
+2026-04-16T14:51:53.1787162Z 
+2026-04-16T14:51:53.1893321Z [notice] A new release of pip is available: 24.0 -> 26.0.1
+2026-04-16T14:51:53.2004982Z [notice] To update, run: pip install --upgrade pip
+2026-04-16T14:51:53.3217547Z Running uv pip install...
+2026-04-16T14:52:38.4385268Z ........................................
+2026-04-16T14:52:38.4385601Z Using Python 3.11.15 environment at: antenv
+2026-04-16T14:52:38.4592950Z Resolved 26 packages in 260ms
+2026-04-16T14:52:38.4713954Z Downloading pandas (10.7MiB)
+2026-04-16T14:52:38.4959768Z Downloading matplotlib (8.3MiB)
+2026-04-16T14:52:38.5084550Z Downloading scipy (33.7MiB)
+2026-04-16T14:52:38.5351319Z Downloading scikit-learn (8.7MiB)
+2026-04-16T14:52:38.5448830Z Downloading numpy (16.1MiB)
+2026-04-16T14:52:38.5583983Z Downloading kiwisolver (1.4MiB)
+2026-04-16T14:52:38.5694307Z Downloading pillow (6.8MiB)
+2026-04-16T14:52:38.5806672Z Downloading fonttools (4.8MiB)
+2026-04-16T14:52:38.5923968Z  Downloaded kiwisolver
+2026-04-16T14:52:38.6069454Z  Downloaded fonttools
+2026-04-16T14:52:38.6194177Z  Downloaded pillow
+2026-04-16T14:52:38.6305463Z  Downloaded matplotlib
+2026-04-16T14:52:38.6441717Z  Downloaded scikit-learn
+2026-04-16T14:52:38.6582491Z  Downloaded numpy
+2026-04-16T14:52:38.6759015Z  Downloaded pandas
+2026-04-16T14:52:38.6908243Z  Downloaded scipy
+2026-04-16T14:52:38.7033056Z Prepared 26 packages in 5.16s
+2026-04-16T14:52:38.7225757Z Installed 26 packages in 1.82s
+2026-04-16T14:52:38.7404345Z Bytecode compiled 5483 files in 37.69s
+2026-04-16T14:52:38.7502214Z  + blinker==1.9.0
+2026-04-16T14:52:38.7611110Z  + click==8.3.2
+2026-04-16T14:52:38.7728014Z  + contourpy==1.3.3
+2026-04-16T14:52:38.7860922Z  + cycler==0.12.1
+2026-04-16T14:52:38.8057788Z  + flask==3.1.3
+2026-04-16T14:52:38.8207038Z  + flask-cors==6.0.2
+2026-04-16T14:52:38.8370472Z  + fonttools==4.62.1
+2026-04-16T14:52:38.8499634Z  + gunicorn==25.3.0
+2026-04-16T14:52:38.8616633Z  + itsdangerous==2.2.0
+2026-04-16T14:52:38.8800669Z  + jinja2==3.1.6
+2026-04-16T14:52:38.8900562Z  + joblib==1.5.3
+2026-04-16T14:52:38.9021254Z  + kiwisolver==1.5.0
+2026-04-16T14:52:38.9134186Z  + markupsafe==3.0.3
+2026-04-16T14:52:38.9288663Z  + matplotlib==3.10.8
+2026-04-16T14:52:38.9403321Z  + numpy==2.4.4
+2026-04-16T14:52:38.9598952Z  + packaging==26.1
+2026-04-16T14:52:38.9730575Z  + pandas==3.0.2
+2026-04-16T14:52:38.9927666Z  + pillow==12.2.0
+2026-04-16T14:52:39.0080701Z  + pyparsing==3.3.2
+2026-04-16T14:52:39.0235525Z  + python-dateutil==2.9.0.post0
+2026-04-16T14:52:39.0347563Z  + scikit-learn==1.8.0
+2026-04-16T14:52:39.0542891Z  + scipy==1.17.1
+2026-04-16T14:52:39.0706717Z  + seaborn==0.13.2
+2026-04-16T14:52:39.0861480Z  + six==1.17.0
+2026-04-16T14:52:39.0971700Z  + threadpoolctl==3.6.0
+2026-04-16T14:52:39.1074039Z  + werkzeug==3.1.8
+2026-04-16T14:52:39.1170048Z uv pip install done in 47 sec(s).
+2026-04-16T14:52:39.1281661Z Not a vso image, so not writing build commands
+2026-04-16T14:52:39.1497745Z Build script snippets done in 53 sec(s).
+2026-04-16T14:52:39.1632652Z Preparing output...
+2026-04-16T14:52:39.1864390Z Compressing source directory directly to destination (optimized path)...
+2026-04-16T14:52:39.2073518Z Using zstd for compression
+2026-04-16T14:52:55.8416727Z ............
+2026-04-16T14:52:55.8417205Z Copied the compressed output to '/home/site/wwwroot'
+2026-04-16T14:52:55.8783348Z Direct compression with zstd done in 17 sec(s).
+2026-04-16T14:52:55.8922526Z 
+2026-04-16T14:52:55.9053611Z Removing existing manifest file
+2026-04-16T14:52:55.9199576Z Creating a manifest file...
+2026-04-16T14:52:55.9327355Z Manifest file created.
+2026-04-16T14:52:55.9571159Z Copying .ostype to manifest output directory.
+2026-04-16T14:52:55.9660419Z 
+2026-04-16T14:52:55.9760893Z Total execution done in 80 sec(s).
+2026-04-16T14:55:49.4566822Z     __ __          __      __    _ __     
+2026-04-16T14:55:49.4576033Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T14:55:49.4577064Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T14:55:49.4577170Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T14:55:49.4577206Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T14:55:49.4577237Z 
+2026-04-16T14:55:49.4577278Z                                           
+2026-04-16T14:55:49.4577300Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T14:55:49.4577320Z 
+2026-04-16T14:55:49.4577341Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T14:55:49.4577364Z Kudu Version : 20260204.5
+2026-04-16T14:55:49.4577396Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T14:55:49.4577418Z Instance Name: 10-30-0-103
+2026-04-16T14:55:49.4577444Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T14:55:49.4577464Z 
+2026-04-16T14:55:50.5464537Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T14:55:50.5539084Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T14:55:51.1368525Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T14:55:51.1768972Z node not running, starting node /opt/webssh/index.js
+2026-04-16T14:55:53.4571835Z Thu Apr 16 14:55:53 UTC 2026 running .net core
+2026-04-16T14:55:53.8819574Z Startup : 02.55.53.870634
+2026-04-16T14:55:53.8960458Z Configure Services : 02.55.53.895743
+2026-04-16T14:55:54.1035318Z Configure : 02.55.54.103131
+2026-04-16T14:55:54.2637688Z Setting Up Routes : 02.55.54.263586
+2026-04-16T14:55:54.2785859Z Exiting Configure : 02.55.54.278307
+2026-04-16T14:55:54.3754135Z Hosting environment: Production
+2026-04-16T14:55:54.3754459Z Content root path: /opt/Kudu
+2026-04-16T14:55:54.3754539Z Now listening on: http://0.0.0.0:8181
+2026-04-16T14:55:54.3754587Z Application started. Press Ctrl+C to shut down.
+2026-04-16T15:03:35.0691129Z Deploy Async
+2026-04-16T15:03:38.0712976Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-04-16T15:03:38.0920600Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-04-16T15:03:38.1174502Z 
+2026-04-16T15:03:38.1308449Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-04-16T15:03:38.1510315Z 
+2026-04-16T15:03:38.1776125Z Build Operation ID: ad984628e428915a
+2026-04-16T15:03:38.1944368Z Repository Commit : a4e774ec-e172-48f2-9bac-e5af375e6b5f
+2026-04-16T15:03:38.2149668Z OS Type           : bullseye
+2026-04-16T15:03:38.2432197Z Image Type        : githubactions
+2026-04-16T15:03:38.2543995Z 
+2026-04-16T15:03:38.2644249Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-04-16T15:03:38.2789792Z Backup SDK Storage URL: 
+2026-04-16T15:03:38.2937537Z Detecting platforms...
+2026-04-16T15:03:38.3056640Z External SDK provider is enabled.
+2026-04-16T15:03:38.3178392Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:03:38.9276979Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:03:39.2551069Z Detected following platforms:
+2026-04-16T15:03:39.2834903Z   python: 3.11.15
+2026-04-16T15:03:39.2956898Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:03:40.0919518Z Version '3.11.15' of platform 'python' is not installed. Generating script to install it...
+2026-04-16T15:03:40.2124911Z 
+2026-04-16T15:03:40.2467889Z Using intermediate directory '/tmp/8de9bc955f4381d'.
+2026-04-16T15:03:40.2628115Z 
+2026-04-16T15:03:40.2916950Z Copying files to the intermediate directory...
+2026-04-16T15:03:40.3385541Z Copying files to intermediate directory done in 0 sec(s).
+2026-04-16T15:03:40.3607009Z 
+2026-04-16T15:03:40.3848342Z Source directory     : /tmp/8de9bc955f4381d
+2026-04-16T15:03:40.4078530Z Destination directory: /home/site/wwwroot
+2026-04-16T15:03:40.4414682Z 
+2026-04-16T15:03:40.4585300Z Installing platform...
+2026-04-16T15:03:40.4817109Z 
+2026-04-16T15:03:40.5113177Z Downloading and extracting 'python' version '3.11.15' to '/tmp/oryx/platforms/python/3.11.15'...
+2026-04-16T15:03:40.5311598Z Detected image debian flavor: bullseye.
+2026-04-16T15:03:40.5665356Z Skipping download of python version 3.11.15 as it is available in external sdk provider cache...
+2026-04-16T15:03:40.6102523Z Extracting contents...
+2026-04-16T15:03:46.7152601Z ..
+2026-04-16T15:03:46.7153038Z Successfully extracted python version 3.11.15 from external sdk provider cache...
+2026-04-16T15:03:47.1210966Z 
+2026-04-16T15:03:47.1442032Z image detector file exists, platform is python..
+2026-04-16T15:03:47.1741009Z OS detector file exists, OS is bullseye..
+2026-04-16T15:03:47.1951254Z Platform installation done in 6 sec(s).
+2026-04-16T15:03:47.4383554Z Running build script snippets...
+2026-04-16T15:03:47.4575621Z Python Version: /tmp/oryx/platforms/python/3.11.15/bin/python3.11
+2026-04-16T15:03:47.4817265Z Creating directory for command manifest file if it does not exist
+2026-04-16T15:03:47.4946974Z Removing existing manifest file
+2026-04-16T15:03:47.5096072Z Python Virtual Environment: antenv
+2026-04-16T15:03:47.5239177Z Creating virtual environment...
+2026-04-16T15:03:47.5352174Z Executing: /tmp/oryx/platforms/python/3.11.15/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-04-16T15:03:51.6377320Z Activating virtual environment...
+2026-04-16T15:03:51.6852891Z Fast build is enabled
+2026-04-16T15:03:51.7026955Z Installing uv...
+2026-04-16T15:03:52.5200975Z Collecting uv
+2026-04-16T15:03:52.5472550Z   Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-04-16T15:03:52.5733604Z Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
+2026-04-16T15:03:52.8536719Z Installing collected packages: uv
+2026-04-16T15:03:53.8113609Z Successfully installed uv-0.11.7
+2026-04-16T15:03:54.0418918Z 
+2026-04-16T15:03:54.0601476Z [notice] A new release of pip is available: 24.0 -> 26.0.1
+2026-04-16T15:03:54.0732705Z [notice] To update, run: pip install --upgrade pip
+2026-04-16T15:03:54.1557652Z Running uv pip install...
+2026-04-16T15:04:14.1947078Z ................
+2026-04-16T15:04:14.1947403Z Using Python 3.11.15 environment at: antenv
+2026-04-16T15:04:14.2259661Z Resolved 26 packages in 278ms
+2026-04-16T15:04:14.2740348Z Downloading numpy (16.1MiB)
+2026-04-16T15:04:14.3008324Z Downloading kiwisolver (1.4MiB)
+2026-04-16T15:04:14.3214089Z Downloading pillow (6.8MiB)
+2026-04-16T15:04:14.3377351Z Downloading scikit-learn (8.7MiB)
+2026-04-16T15:04:14.3559282Z Downloading fonttools (4.8MiB)
+2026-04-16T15:04:14.3987449Z Downloading matplotlib (8.3MiB)
+2026-04-16T15:04:14.4431904Z Downloading scipy (33.7MiB)
+2026-04-16T15:04:14.4697024Z Downloading pandas (10.7MiB)
+2026-04-16T15:04:14.5250868Z  Downloaded kiwisolver
+2026-04-16T15:04:14.5461402Z  Downloaded fonttools
+2026-04-16T15:04:14.5619233Z  Downloaded pillow
+2026-04-16T15:04:14.5785899Z  Downloaded matplotlib
+2026-04-16T15:04:14.5949803Z  Downloaded scikit-learn
+2026-04-16T15:04:14.6191056Z  Downloaded numpy
+2026-04-16T15:04:14.6343682Z  Downloaded pandas
+2026-04-16T15:04:14.6566979Z  Downloaded scipy
+2026-04-16T15:04:14.6744723Z Prepared 26 packages in 4.89s
+2026-04-16T15:04:14.6909412Z Installed 26 packages in 866ms
+2026-04-16T15:04:14.7067127Z Bytecode compiled 5483 files in 13.87s
+2026-04-16T15:04:14.7233617Z  + blinker==1.9.0
+2026-04-16T15:04:14.7446995Z  + click==8.3.2
+2026-04-16T15:04:14.7734078Z  + contourpy==1.3.3
+2026-04-16T15:04:14.7911553Z  + cycler==0.12.1
+2026-04-16T15:04:14.8081242Z  + flask==3.1.3
+2026-04-16T15:04:14.8247510Z  + flask-cors==6.0.2
+2026-04-16T15:04:14.8426849Z  + fonttools==4.62.1
+2026-04-16T15:04:14.8576109Z  + gunicorn==25.3.0
+2026-04-16T15:04:14.8843404Z  + itsdangerous==2.2.0
+2026-04-16T15:04:14.9047951Z  + jinja2==3.1.6
+2026-04-16T15:04:14.9230049Z  + joblib==1.5.3
+2026-04-16T15:04:14.9470782Z  + kiwisolver==1.5.0
+2026-04-16T15:04:14.9643074Z  + markupsafe==3.0.3
+2026-04-16T15:04:14.9825269Z  + matplotlib==3.10.8
+2026-04-16T15:04:15.0054496Z  + numpy==2.4.4
+2026-04-16T15:04:15.0228006Z  + packaging==26.1
+2026-04-16T15:04:15.0368282Z  + pandas==3.0.2
+2026-04-16T15:04:15.0510563Z  + pillow==12.2.0
+2026-04-16T15:04:15.0663065Z  + pyparsing==3.3.2
+2026-04-16T15:04:15.0799491Z  + python-dateutil==2.9.0.post0
+2026-04-16T15:04:15.0949845Z  + scikit-learn==1.8.0
+2026-04-16T15:04:15.1069351Z  + scipy==1.17.1
+2026-04-16T15:04:15.1288347Z  + seaborn==0.13.2
+2026-04-16T15:04:15.1443271Z  + six==1.17.0
+2026-04-16T15:04:15.1630945Z  + threadpoolctl==3.6.0
+2026-04-16T15:04:15.1789624Z  + werkzeug==3.1.8
+2026-04-16T15:04:15.2320194Z uv pip install done in 23 sec(s).
+2026-04-16T15:04:15.2549733Z Not a vso image, so not writing build commands
+2026-04-16T15:04:15.2707187Z Build script snippets done in 27 sec(s).
+2026-04-16T15:04:15.2828935Z Preparing output...
+2026-04-16T15:04:15.2969390Z Compressing source directory directly to destination (optimized path)...
+2026-04-16T15:04:15.3139953Z Using zstd for compression
+2026-04-16T15:05:14.5248814Z .......................................................
+2026-04-16T15:05:14.5249525Z Copied the compressed output to '/home/site/wwwroot'
+2026-04-16T15:05:14.5749841Z Direct compression with zstd done in 60 sec(s).
+2026-04-16T15:05:14.5988124Z 
+2026-04-16T15:05:14.6243381Z Removing existing manifest file
+2026-04-16T15:05:14.6405694Z Creating a manifest file...
+2026-04-16T15:05:14.6663993Z Manifest file created.
+2026-04-16T15:05:14.6859455Z Copying .ostype to manifest output directory.
+2026-04-16T15:05:14.7073734Z 
+2026-04-16T15:05:14.7237404Z Total execution done in 94 sec(s).
+2026-04-16T15:07:01.0257740Z     __ __          __      __    _ __     
+2026-04-16T15:07:01.0259683Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T15:07:01.0259727Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T15:07:01.0259751Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T15:07:01.0259774Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T15:07:01.0259834Z 
+2026-04-16T15:07:01.0259862Z                                           
+2026-04-16T15:07:01.0259883Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T15:07:01.0259903Z 
+2026-04-16T15:07:01.0259926Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T15:07:01.0259947Z Kudu Version : 20260204.5
+2026-04-16T15:07:01.0259969Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T15:07:01.0259990Z Instance Name: 10-30-0-103
+2026-04-16T15:07:01.0260024Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T15:07:01.0260045Z 
+2026-04-16T15:07:03.0597028Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T15:07:03.0817199Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T15:07:03.9462403Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T15:07:03.9785377Z node not running, starting node /opt/webssh/index.js
+2026-04-16T15:07:09.1686821Z Thu Apr 16 15:07:09 UTC 2026 running .net core
+2026-04-16T15:09:19.6411203Z     __ __          __      __    _ __     
+2026-04-16T15:09:19.6419201Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T15:09:19.6419303Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T15:09:19.6419341Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T15:09:19.6419374Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T15:09:19.6419403Z 
+2026-04-16T15:09:19.6419449Z                                           
+2026-04-16T15:09:19.6419483Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T15:09:19.6419514Z 
+2026-04-16T15:09:19.6419546Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T15:09:19.6419591Z Kudu Version : 20260204.5
+2026-04-16T15:09:19.6419626Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T15:09:19.6419661Z Instance Name: 10-30-0-103
+2026-04-16T15:09:19.6419702Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T15:09:19.6419735Z 
+2026-04-16T15:09:20.4661702Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T15:09:20.4706304Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T15:09:21.1284940Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T15:09:21.1709707Z node not running, starting node /opt/webssh/index.js
+2026-04-16T15:09:23.1759129Z Thu Apr 16 15:09:23 UTC 2026 running .net core
+2026-04-16T15:09:23.7003624Z Startup : 03.09.23.688699
+2026-04-16T15:09:23.7151952Z Configure Services : 03.09.23.715038
+2026-04-16T15:09:23.9159869Z Configure : 03.09.23.915808
+2026-04-16T15:09:24.0611244Z Setting Up Routes : 03.09.24.060897
+2026-04-16T15:09:24.0802735Z Exiting Configure : 03.09.24.080004
+2026-04-16T15:09:24.1554704Z Hosting environment: Production
+2026-04-16T15:09:24.1555180Z Content root path: /opt/Kudu
+2026-04-16T15:09:24.1562532Z Now listening on: http://0.0.0.0:8181
+2026-04-16T15:09:24.1562650Z Application started. Press Ctrl+C to shut down.
+2026-04-16T15:20:41.9068479Z Deploy Async
+2026-04-16T15:20:45.3134986Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-04-16T15:20:45.3462103Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-04-16T15:20:45.3787142Z 
+2026-04-16T15:20:45.4059010Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-04-16T15:20:45.4237853Z 
+2026-04-16T15:20:45.4576195Z Build Operation ID: 3d8f41e5f4f2e440
+2026-04-16T15:20:45.4771765Z Repository Commit : 16d98f92-f97a-41b7-9f70-fb43617d577a
+2026-04-16T15:20:45.4954610Z OS Type           : bullseye
+2026-04-16T15:20:45.5104552Z Image Type        : githubactions
+2026-04-16T15:20:45.5339155Z 
+2026-04-16T15:20:45.5496176Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-04-16T15:20:45.5768040Z Backup SDK Storage URL: 
+2026-04-16T15:20:45.6201831Z Detecting platforms...
+2026-04-16T15:20:45.6343777Z External SDK provider is enabled.
+2026-04-16T15:20:45.6513733Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:20:46.1975936Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:20:46.8973883Z Detected following platforms:
+2026-04-16T15:20:46.9243138Z   python: 3.11.15
+2026-04-16T15:20:46.9438831Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:20:47.8093488Z Version '3.11.15' of platform 'python' is not installed. Generating script to install it...
+2026-04-16T15:20:47.9558505Z 
+2026-04-16T15:20:47.9916699Z Using intermediate directory '/tmp/8de9bcbba13804e'.
+2026-04-16T15:20:48.0080050Z 
+2026-04-16T15:20:48.0228601Z Copying files to the intermediate directory...
+2026-04-16T15:20:48.0979898Z Copying files to intermediate directory done in 1 sec(s).
+2026-04-16T15:20:48.1228353Z 
+2026-04-16T15:20:48.1389634Z Source directory     : /tmp/8de9bcbba13804e
+2026-04-16T15:20:48.2442797Z Destination directory: /home/site/wwwroot
+2026-04-16T15:20:48.2649529Z 
+2026-04-16T15:20:48.2795994Z Installing platform...
+2026-04-16T15:20:48.2973375Z 
+2026-04-16T15:20:48.3368756Z Downloading and extracting 'python' version '3.11.15' to '/tmp/oryx/platforms/python/3.11.15'...
+2026-04-16T15:20:48.4643793Z Detected image debian flavor: bullseye.
+2026-04-16T15:20:48.4988294Z Skipping download of python version 3.11.15 as it is available in external sdk provider cache...
+2026-04-16T15:20:48.5220459Z Extracting contents...
+2026-04-16T15:20:55.6200086Z ..
+2026-04-16T15:20:55.6200431Z Successfully extracted python version 3.11.15 from external sdk provider cache...
+2026-04-16T15:20:55.7321019Z 
+2026-04-16T15:20:55.7564501Z image detector file exists, platform is python..
+2026-04-16T15:20:55.8113955Z OS detector file exists, OS is bullseye..
+2026-04-16T15:20:55.8510571Z Platform installation done in 7 sec(s).
+2026-04-16T15:20:55.8850477Z Running build script snippets...
+2026-04-16T15:20:55.9342002Z Python Version: /tmp/oryx/platforms/python/3.11.15/bin/python3.11
+2026-04-16T15:20:55.9654613Z Creating directory for command manifest file if it does not exist
+2026-04-16T15:20:55.9974381Z Removing existing manifest file
+2026-04-16T15:20:56.0179090Z Python Virtual Environment: antenv
+2026-04-16T15:20:56.0443312Z Creating virtual environment...
+2026-04-16T15:20:56.0780165Z Executing: /tmp/oryx/platforms/python/3.11.15/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-04-16T15:21:01.8319235Z .
+2026-04-16T15:21:01.8323472Z Activating virtual environment...
+2026-04-16T15:21:01.8824038Z Fast build is enabled
+2026-04-16T15:21:01.9221611Z Installing uv...
+2026-04-16T15:21:03.3177031Z Collecting uv
+2026-04-16T15:21:03.3581544Z   Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-04-16T15:21:03.4133074Z Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
+2026-04-16T15:21:03.8055333Z Installing collected packages: uv
+2026-04-16T15:21:04.6937414Z Successfully installed uv-0.11.7
+2026-04-16T15:21:04.9674801Z 
+2026-04-16T15:21:05.0024570Z [notice] A new release of pip is available: 24.0 -> 26.0.1
+2026-04-16T15:21:05.0317145Z [notice] To update, run: pip install --upgrade pip
+2026-04-16T15:21:05.2502207Z Running uv pip install...
+2026-04-16T15:21:25.2348647Z ...............
+2026-04-16T15:21:25.2349024Z Using Python 3.11.15 environment at: antenv
+2026-04-16T15:21:25.2845083Z Resolved 18 packages in 284ms
+2026-04-16T15:21:25.3140883Z Downloading scikit-learn (8.7MiB)
+2026-04-16T15:21:25.3361093Z Downloading numpy (16.1MiB)
+2026-04-16T15:21:25.3537642Z Downloading scipy (33.7MiB)
+2026-04-16T15:21:25.3808116Z Downloading pandas (10.7MiB)
+2026-04-16T15:21:25.3973782Z  Downloaded scikit-learn
+2026-04-16T15:21:25.4239918Z  Downloaded numpy
+2026-04-16T15:21:25.4436539Z  Downloaded scipy
+2026-04-16T15:21:25.4665267Z  Downloaded pandas
+2026-04-16T15:21:25.4930385Z Prepared 18 packages in 3.35s
+2026-04-16T15:21:25.5143860Z Installed 18 packages in 344ms
+2026-04-16T15:21:25.5375551Z Bytecode compiled 4675 files in 15.81s
+2026-04-16T15:21:25.5604243Z  + blinker==1.9.0
+2026-04-16T15:21:25.5865205Z  + click==8.3.2
+2026-04-16T15:21:25.6081852Z  + flask==3.1.3
+2026-04-16T15:21:25.6349176Z  + flask-cors==6.0.2
+2026-04-16T15:21:25.6657263Z  + gunicorn==25.3.0
+2026-04-16T15:21:25.6831404Z  + itsdangerous==2.2.0
+2026-04-16T15:21:25.6996738Z  + jinja2==3.1.6
+2026-04-16T15:21:25.7141046Z  + joblib==1.5.3
+2026-04-16T15:21:25.7272424Z  + markupsafe==3.0.3
+2026-04-16T15:21:25.7428160Z  + numpy==2.4.4
+2026-04-16T15:21:25.7632121Z  + packaging==26.1
+2026-04-16T15:21:25.7969723Z  + pandas==3.0.2
+2026-04-16T15:21:25.8137266Z  + python-dateutil==2.9.0.post0
+2026-04-16T15:21:25.8599510Z  + scikit-learn==1.8.0
+2026-04-16T15:21:25.8799186Z  + scipy==1.17.1
+2026-04-16T15:21:25.8950930Z  + six==1.17.0
+2026-04-16T15:21:25.9081429Z  + threadpoolctl==3.6.0
+2026-04-16T15:21:25.9247532Z  + werkzeug==3.1.8
+2026-04-16T15:21:25.9392054Z uv pip install done in 24 sec(s).
+2026-04-16T15:21:25.9535596Z Not a vso image, so not writing build commands
+2026-04-16T15:21:25.9727226Z Build script snippets done in 30 sec(s).
+2026-04-16T15:21:25.9869634Z Preparing output...
+2026-04-16T15:21:26.0186706Z Compressing source directory directly to destination (optimized path)...
+2026-04-16T15:21:26.0320327Z Using zstd for compression
+2026-04-16T15:21:38.9082894Z ........
+2026-04-16T15:21:38.9083224Z Copied the compressed output to '/home/site/wwwroot'
+2026-04-16T15:21:38.9770128Z Direct compression with zstd done in 13 sec(s).
+2026-04-16T15:21:39.0086914Z 
+2026-04-16T15:21:39.0388809Z Removing existing manifest file
+2026-04-16T15:21:39.0663221Z Creating a manifest file...
+2026-04-16T15:21:39.0951747Z Manifest file created.
+2026-04-16T15:21:39.1122694Z Copying .ostype to manifest output directory.
+2026-04-16T15:21:39.1638030Z 
+2026-04-16T15:21:39.1790106Z Total execution done in 52 sec(s).
+2026-04-16T15:36:04.3179405Z     __ __          __      __    _ __     
+2026-04-16T15:36:04.4102802Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-04-16T15:36:04.4102961Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-04-16T15:36:04.4102997Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-04-16T15:36:04.4103029Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-04-16T15:36:04.4103057Z 
+2026-04-16T15:36:04.4103105Z                                           
+2026-04-16T15:36:04.4103137Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-04-16T15:36:04.4103165Z 
+2026-04-16T15:36:04.4103204Z Documentation: http://aka.ms/webapp-linux
+2026-04-16T15:36:04.4103242Z Kudu Version : 20260204.5
+2026-04-16T15:36:04.4103275Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-04-16T15:36:04.4103305Z Instance Name: 10-30-0-103
+2026-04-16T15:36:04.4103346Z Instance Id  : 2e9614b903860387ad41d2d4735570ca0c8b29649a02cb187ad6afea560d5745
+2026-04-16T15:36:04.4103377Z 
+2026-04-16T15:36:05.6213393Z chown: changing ownership of '/temp': Operation not permitted
+2026-04-16T15:36:05.6550802Z chmod: changing permissions of '/temp': Operation not permitted
+2026-04-16T15:36:06.7766274Z Restarting OpenBSD Secure Shell server: sshd.
+2026-04-16T15:36:06.8389451Z node not running, starting node /opt/webssh/index.js
+2026-04-16T15:36:13.3834377Z Thu Apr 16 15:36:13 UTC 2026 running .net core
+2026-04-16T15:36:14.7310788Z Startup : 03.36.14.713194
+2026-04-16T15:36:14.8029389Z Configure Services : 03.36.14.802732
+2026-04-16T15:36:15.2760071Z Configure : 03.36.15.274294
+2026-04-16T15:36:15.6290498Z Setting Up Routes : 03.36.15.628859
+2026-04-16T15:36:15.6560432Z Exiting Configure : 03.36.15.655815
+2026-04-16T15:36:15.7824720Z Hosting environment: Production
+2026-04-16T15:36:15.7825239Z Content root path: /opt/Kudu
+2026-04-16T15:36:15.7825293Z Now listening on: http://0.0.0.0:8181
+2026-04-16T15:36:15.7825354Z Application started. Press Ctrl+C to shut down.
+2026-04-16T15:42:44.0366137Z Deploy Async
+2026-04-16T15:42:47.1973429Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-04-16T15:42:47.2230572Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-04-16T15:42:47.2337220Z 
+2026-04-16T15:42:47.2440241Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-04-16T15:42:47.2567492Z 
+2026-04-16T15:42:47.2716455Z Build Operation ID: 0a87e43159e1af8b
+2026-04-16T15:42:47.2841374Z Repository Commit : d9ea17ca-4ec6-46b4-9e27-25e10e847c40
+2026-04-16T15:42:47.3059654Z OS Type           : bullseye
+2026-04-16T15:42:47.3328711Z Image Type        : githubactions
+2026-04-16T15:42:47.3465581Z 
+2026-04-16T15:42:47.3576411Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-04-16T15:42:47.3669787Z Backup SDK Storage URL: 
+2026-04-16T15:42:47.3818669Z Detecting platforms...
+2026-04-16T15:42:47.3957805Z External SDK provider is enabled.
+2026-04-16T15:42:47.4149408Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:42:48.2740022Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:42:48.9855013Z Detected following platforms:
+2026-04-16T15:42:48.9987716Z   python: 3.11.15
+2026-04-16T15:42:49.0117913Z Requesting metadata for platform python from external SDK provider
+2026-04-16T15:42:49.8898260Z Version '3.11.15' of platform 'python' is not installed. Generating script to install it...
+2026-04-16T15:42:50.0116326Z 
+2026-04-16T15:42:50.0455046Z Using intermediate directory '/tmp/8de9bcece0dbf2e'.
+2026-04-16T15:42:50.0619198Z 
+2026-04-16T15:42:50.0716303Z Copying files to the intermediate directory...
+2026-04-16T15:42:50.1864375Z Copying files to intermediate directory done in 0 sec(s).
+2026-04-16T15:42:50.2119314Z 
+2026-04-16T15:42:50.2249609Z Source directory     : /tmp/8de9bcece0dbf2e
+2026-04-16T15:42:50.2403782Z Destination directory: /home/site/wwwroot
+2026-04-16T15:42:50.2646077Z 
+2026-04-16T15:42:50.2841365Z Installing platform...
+2026-04-16T15:42:50.3138200Z 
+2026-04-16T15:42:50.3295546Z Downloading and extracting 'python' version '3.11.15' to '/tmp/oryx/platforms/python/3.11.15'...
+2026-04-16T15:42:50.3418238Z Detected image debian flavor: bullseye.
+2026-04-16T15:42:50.3655976Z Skipping download of python version 3.11.15 as it is available in external sdk provider cache...
+2026-04-16T15:42:50.3838580Z Extracting contents...
+2026-04-16T15:42:56.4499417Z ..
+2026-04-16T15:42:56.4499766Z Successfully extracted python version 3.11.15 from external sdk provider cache...
+2026-04-16T15:42:56.4853522Z 
+2026-04-16T15:42:56.5120749Z image detector file exists, platform is python..
+2026-04-16T15:42:56.5259328Z OS detector file exists, OS is bullseye..
+2026-04-16T15:42:56.5436354Z Platform installation done in 6 sec(s).
+2026-04-16T15:42:56.6811261Z Running build script snippets...
+2026-04-16T15:42:56.6969363Z Python Version: /tmp/oryx/platforms/python/3.11.15/bin/python3.11
+2026-04-16T15:42:56.7153124Z Creating directory for command manifest file if it does not exist
+2026-04-16T15:42:56.7333391Z Removing existing manifest file
+2026-04-16T15:42:56.7471449Z Python Virtual Environment: antenv
+2026-04-16T15:42:56.7623606Z Creating virtual environment...
+2026-04-16T15:42:56.7896759Z Executing: /tmp/oryx/platforms/python/3.11.15/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-04-16T15:43:01.1840094Z Activating virtual environment...
+2026-04-16T15:43:01.2032364Z Fast build is enabled
+2026-04-16T15:43:01.2253171Z Installing uv...
+2026-04-16T15:43:02.1247778Z Collecting uv
+2026-04-16T15:43:02.1549688Z   Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-04-16T15:43:02.1859841Z Using cached uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
+2026-04-16T15:43:02.4215685Z Installing collected packages: uv
+2026-04-16T15:43:03.3287356Z Successfully installed uv-0.11.7
+2026-04-16T15:43:03.5954935Z 
+2026-04-16T15:43:03.6083832Z [notice] A new release of pip is available: 24.0 -> 26.0.1
+2026-04-16T15:43:03.6172876Z [notice] To update, run: pip install --upgrade pip
+2026-04-16T15:43:03.7182997Z Running uv pip install...
+2026-04-16T15:43:23.5688572Z ...............
+2026-04-16T15:43:23.5699367Z Using Python 3.11.15 environment at: antenv
+2026-04-16T15:43:23.5901983Z Resolved 26 packages in 301ms
+2026-04-16T15:43:23.6068337Z Downloading pandas (10.7MiB)
+2026-04-16T15:43:23.6346886Z Downloading pillow (6.8MiB)
+2026-04-16T15:43:23.6540665Z Downloading matplotlib (8.3MiB)
+2026-04-16T15:43:23.6662143Z Downloading numpy (16.1MiB)
+2026-04-16T15:43:23.6779082Z Downloading fonttools (4.8MiB)
+2026-04-16T15:43:23.6893174Z Downloading kiwisolver (1.4MiB)
+2026-04-16T15:43:23.7000030Z Downloading scikit-learn (8.7MiB)
+2026-04-16T15:43:23.7086216Z Downloading scipy (33.7MiB)
+2026-04-16T15:43:23.7169733Z  Downloaded kiwisolver
+2026-04-16T15:43:23.7277658Z  Downloaded fonttools
+2026-04-16T15:43:23.7394439Z  Downloaded pillow
+2026-04-16T15:43:23.7486912Z  Downloaded matplotlib
+2026-04-16T15:43:23.7648664Z  Downloaded scikit-learn
+2026-04-16T15:43:23.7791650Z  Downloaded numpy
+2026-04-16T15:43:23.8038852Z  Downloaded scipy
+2026-04-16T15:43:23.8222770Z  Downloaded pandas
+2026-04-16T15:43:23.8368699Z Prepared 26 packages in 4.10s
+2026-04-16T15:43:23.8526717Z Installed 26 packages in 828ms
+2026-04-16T15:43:23.8718220Z Bytecode compiled 5483 files in 14.46s
+2026-04-16T15:43:23.8866222Z  + blinker==1.9.0
+2026-04-16T15:43:23.8986462Z  + click==8.3.2
+2026-04-16T15:43:23.9072449Z  + contourpy==1.3.3
+2026-04-16T15:43:23.9298514Z  + cycler==0.12.1
+2026-04-16T15:43:23.9485785Z  + flask==3.1.3
+2026-04-16T15:43:23.9608169Z  + flask-cors==6.0.2
+2026-04-16T15:43:23.9738373Z  + fonttools==4.62.1
+2026-04-16T15:43:23.9939338Z  + gunicorn==25.3.0
+2026-04-16T15:43:24.0077979Z  + itsdangerous==2.2.0
+2026-04-16T15:43:24.0215962Z  + jinja2==3.1.6
+2026-04-16T15:43:24.0336672Z  + joblib==1.5.3
+2026-04-16T15:43:24.0467361Z  + kiwisolver==1.5.0
+2026-04-16T15:43:24.0577836Z  + markupsafe==3.0.3
+2026-04-16T15:43:24.0665894Z  + matplotlib==3.10.8
+2026-04-16T15:43:24.0773529Z  + numpy==2.4.4
+2026-04-16T15:43:24.0916655Z  + packaging==26.1
+2026-04-16T15:43:24.1033085Z  + pandas==3.0.2
+2026-04-16T15:43:24.1159613Z  + pillow==12.2.0
+2026-04-16T15:43:24.1270870Z  + pyparsing==3.3.2
+2026-04-16T15:43:24.1382602Z  + python-dateutil==2.9.0.post0
+2026-04-16T15:43:24.1515068Z  + scikit-learn==1.8.0
+2026-04-16T15:43:24.1616697Z  + scipy==1.17.1
+2026-04-16T15:43:24.1728876Z  + seaborn==0.13.2
+2026-04-16T15:43:24.1953123Z  + six==1.17.0
+2026-04-16T15:43:24.2118425Z  + threadpoolctl==3.6.0
+2026-04-16T15:43:24.2250152Z  + werkzeug==3.1.8
+2026-04-16T15:43:24.2378661Z uv pip install done in 22 sec(s).
+2026-04-16T15:43:24.2746569Z Not a vso image, so not writing build commands
+2026-04-16T15:43:24.3000832Z Build script snippets done in 27 sec(s).
+2026-04-16T15:43:24.3193110Z Preparing output...
+2026-04-16T15:43:24.3350538Z Compressing source directory directly to destination (optimized path)...
+2026-04-16T15:43:24.3482116Z Using zstd for compression
+2026-04-16T15:43:40.2462940Z ...........
+2026-04-16T15:43:40.2470560Z Copied the compressed output to '/home/site/wwwroot'
+2026-04-16T15:43:40.2788027Z Direct compression with zstd done in 17 sec(s).
+2026-04-16T15:43:40.2970210Z 
+2026-04-16T15:43:40.3081688Z Removing existing manifest file
+2026-04-16T15:43:40.3197130Z Creating a manifest file...
+2026-04-16T15:43:40.3328551Z Manifest file created.
+2026-04-16T15:43:40.3483701Z Copying .ostype to manifest output directory.
+2026-04-16T15:43:40.3624648Z 
+2026-04-16T15:43:40.3746247Z Total execution done in 50 sec(s).
