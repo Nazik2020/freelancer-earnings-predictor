@@ -12,7 +12,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **[View Live on Azure →](your-azure-url-here)**
+🔗 **[View Live on Azure →]((https://proud-tree-0fb75e910.6.azurestaticapps.net/))**
 
 ---
 
